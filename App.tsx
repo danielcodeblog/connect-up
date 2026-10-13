@@ -25,6 +25,7 @@ import { SideNav } from './components/SideNav';
 import { SettingsView } from './components/SettingsView';
 import { ContactPage } from './components/ContactPage';
 import { BlogPage } from './components/BlogPage';
+import { AboutPage } from './components/AboutPage';
 import AdminDashboard from './components/AdminDashboard';
 // @ts-ignore
 import { PaystackButton } from 'react-paystack';
@@ -128,6 +129,9 @@ const App = () => {
     if (pathname === '/blog' || hash === '#blog') {
       return 'BLOG';
     }
+    if (pathname === '/about' || hash === '#about') {
+      return 'ABOUT';
+    }
     if (pathname === '/contact' || hash === '#contact') {
       if (!isLoggedIn) {
         return 'CONTACT';
@@ -217,6 +221,7 @@ const App = () => {
   // Helper to resolve canonical URL path for state, view & role
   const getCanonicalPath = useCallback((state: AppState | string, view: string, userRole: UserRole) => {
     if (state === 'LANDING') return '/home';
+    if (state === 'ABOUT') return '/about';
     if (state === 'BLOG') return '/blog';
     if (state === 'CONTACT') return '/contact';
     if (state === 'AUTH') return '/auth';
@@ -338,6 +343,11 @@ const App = () => {
 
       if (pathname === '/blog' || hash === '#blog') {
         setAppState('BLOG');
+        return;
+      }
+
+      if (pathname === '/about' || hash === '#about') {
+        setAppState('ABOUT');
         return;
       }
 
@@ -1544,6 +1554,16 @@ const App = () => {
 
 
   const handleNavigateFromStandalone = (page: 'home' | 'about' | 'why' | 'founders' | 'pricing' | 'blog' | 'contact') => {
+    if (page === 'about') {
+      try {
+        window.history.pushState({}, '', '/about');
+      } catch {
+        window.location.hash = '#about';
+      }
+      setAppState('ABOUT');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      return;
+    }
     if (page === 'blog') {
       try {
         window.history.pushState({}, '', '/blog');
@@ -1591,7 +1611,7 @@ const App = () => {
   const isLockedView = appState === 'MAIN_APP' && (currentView === 'home' || currentView === 'messages');
 
   return (
-    <div className={`bg-white dark:bg-[#0D0D0F] flex selection:bg-zinc-900 selection:text-white dark:selection:bg-zinc-100 dark:selection:text-zinc-900 ${appState === 'LANDING' || appState === 'ADMIN_AUTH' || appState === 'BLOG' || appState === 'CONTACT' ? 'min-h-screen' : isLockedView ? 'h-[100dvh] w-full overflow-hidden overscroll-none' : 'min-h-screen w-full relative'} relative transition-colors duration-200 font-sans`}>
+    <div className={`bg-white dark:bg-[#0D0D0F] flex selection:bg-zinc-900 selection:text-white dark:selection:bg-zinc-100 dark:selection:text-zinc-900 ${appState === 'LANDING' || appState === 'ADMIN_AUTH' || appState === 'BLOG' || appState === 'CONTACT' || appState === 'ABOUT' ? 'min-h-screen' : isLockedView ? 'h-[100dvh] w-full overflow-hidden overscroll-none' : 'min-h-screen w-full relative'} relative transition-colors duration-200 font-sans`}>
       {appState === 'MAIN_APP' && currentView !== 'admin' && (
         <>
           <SideNav 
@@ -1603,7 +1623,7 @@ const App = () => {
         </>
       )}
       <div className={`w-full bg-transparent relative flex flex-col font-sans ${
-        appState === 'LANDING' || appState === 'ADMIN_AUTH' || appState === 'BLOG' || appState === 'CONTACT'
+        appState === 'LANDING' || appState === 'ADMIN_AUTH' || appState === 'BLOG' || appState === 'CONTACT' || appState === 'ABOUT'
           ? 'min-h-screen' 
           : isLockedView ? 'h-[100dvh] overflow-hidden' : 'min-h-screen'
       }`}>
@@ -1650,6 +1670,22 @@ const App = () => {
               onLoginClick={() => {
                 setAppState('AUTH');
               }}
+              onNavigateToContact={() => handleNavigateFromStandalone('contact')}
+              onNavigateToSection={handleNavigateFromStandalone}
+              onLegalView={setGlobalLegalView}
+            />
+            {globalLegalView && (
+              <LegalView type={globalLegalView} onBack={() => setGlobalLegalView(null)} />
+            )}
+          </>
+        ) : appState === 'ABOUT' ? (
+          <>
+            <AboutPage 
+              onBackHome={() => handleNavigateFromStandalone('home')}
+              onLoginClick={() => {
+                setAppState('AUTH');
+              }}
+              onNavigateToBlog={() => handleNavigateFromStandalone('blog')}
               onNavigateToContact={() => handleNavigateFromStandalone('contact')}
               onNavigateToSection={handleNavigateFromStandalone}
               onLegalView={setGlobalLegalView}

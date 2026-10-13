@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { Heart, ThumbsDown, Flame, Users, Briefcase, ChevronRight, Menu, X, ArrowRight, TrendingUp, Sparkles, Building2, Shield, Rocket, Mail, LogIn, User, Play, Pause } from 'lucide-react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ShaderBackground } from './ui/hero-shader';
 import { FounderSlider } from './ui/founder-slider-1';
 import { NavHeader } from './ui/nav-header';
@@ -18,8 +16,6 @@ import { Pricing } from './Pricing';
 import FooterSection5 from './ui/footer-section-5';
 import foundersBg from '../src/assets/images/founders.png';
 import goldenGateBg from '../src/assets/images/golden_gate_bridge_1785141940553.jpg';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const reviews = [
   {
@@ -72,32 +68,6 @@ export default function LandingSite({
     useEffect(() => {
       // Check if we are on mobile/tablet to disable heavy features
       setShowVideo(true);
-    }, []);
-  
-    useEffect(() => {
-      // Aggressive entrance animations for sections
-      const sections = ['about', 'why', 'pricing'];
-      
-      sections.forEach((id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            gsap.fromTo(element, 
-                { opacity: 0, y: 100, scale: 0.95 }, 
-                { 
-                    opacity: 1, 
-                    y: 0, 
-                    scale: 1, 
-                    duration: 0.8, 
-                    ease: "power3.out",
-                    scrollTrigger: {
-                        trigger: element,
-                        start: "top 80%",
-                        toggleActions: "play none none reverse"
-                    }
-                }
-            );
-        }
-      });
     }, []);
   
     const [isScrolled, setIsScrolled] = useState(false);

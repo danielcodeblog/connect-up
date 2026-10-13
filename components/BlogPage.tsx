@@ -149,279 +149,184 @@ export const BLOG_POSTS: BlogPost[] = [
       'Syndicated by ConnectUp members alongside Tier-1 institutional research funds.'
     ],
     content: `
-      <h2>Building World Models Beyond Token Prediction</h2>
-      <p>AMI Labs has closed a landmark $1 Billion Series A round to pioneer a new paradigm in artificial intelligence: World-Model Architecture. Moving beyond token prediction, AMI Labs' architectures learn physical commonsense and causal reasoning.</p>
-      <p>Led by world-renowned researchers, AMI Labs is building foundation models capable of planning, spatial reasoning, and real-time physical interaction.</p>
-      <blockquote>"True intelligence requires understanding how the physical world works, not just predicting the next word in a sentence."</blockquote>
-      <h3>Why World Models Matter</h3>
+      <h2>Beyond Next-Token Prediction: The World Model Era</h2>
+      <p>Large Language Models have redefined text generation, but true artificial general intelligence requires causal understanding of physical reality. AMI Labs has closed a $1B Series A financing round to scale its foundational world-model architecture.</p>
+      <p>Unlike standard transformers trained solely on web text, AMI's models simulate physical environments, aerodynamic forces, and multi-agent interactions in real time.</p>
+      <blockquote>"We are moving from statistical text prediction to true physical world simulation."</blockquote>
+      <h3>Core Innovations</h3>
       <ul>
-        <li><strong>Causal Reasoning:</strong> Enables AI agents to predict consequences before taking actions in robotics and complex industrial settings.</li>
-        <li><strong>Energy Efficiency:</strong> Requires up to 80% fewer compute resources for complex logical planning compared to standard auto-regressive models.</li>
-        <li><strong>Universal Application:</strong> From autonomous manufacturing to breakthrough drug discovery simulations.</li>
+        <li><strong>Causal Reasoning Engines:</strong> Simulating real-world physical interactions at microsecond latency.</li>
+        <li><strong>Robotics Co-Pilot:</strong> Direct translation of world-model embeddings into robotic control loops.</li>
+        <li><strong>Unprecedented Efficiency:</strong> 80% lower compute overhead for complex multi-variable forecasting.</li>
       </ul>
-      <p>ConnectUp is proud to participate in this syndicate alongside global technology leaders to shape the future of artificial general intelligence.</p>
+      <p>We are honored to support AMI Labs as they unlock the next technological leap in foundational AI research.</p>
     `,
-    category: 'AI Research',
-    badge: 'PORTFOLIO HIGHLIGHT',
-    author: 'Elena Rodriguez',
-    authorRole: 'Partner, Frontier Computing',
-    date: 'Oct 02, 2026',
-    readTime: '7 min read',
+    category: 'AI & Research',
+    badge: 'SERIES A',
+    author: 'Elena Rostova',
+    authorRole: 'Head of AI Architecture',
+    date: 'Sep 29, 2026',
+    readTime: '5 min read',
     image: worldModelAi,
     featured: true,
-    views: '31.5k'
+    views: '35.1k'
   },
   {
     id: 4,
-    company: 'CONNECTUP DISPATCH',
-    title: 'The Art of the Swipe: How Intuitive Discovery Accelerates Pre-Seed Rounds from Weeks to Days',
-    excerpt: 'Why high-conviction early-stage syndication is shifting from closed country-club backrooms to high-velocity algorithmic discovery.',
+    company: 'CONNECTUP',
+    title: 'The Art of the 60-Second Swipe: How to Win Tier-1 VC Attention Without Cold Emails',
+    excerpt: 'An inside look at how micro-pitch decks and instant thesis alignment have replaced the traditional 4-month fundraising marathon.',
     takeaways: [
-      'Founder time to first confirmed angel commitment decreased from an industry average of 42 days to just 8 days.',
-      'Verified traction signals replace subjective warm intros, leveling the playing field for international builders.',
-      'Direct in-app syndicate room creation allows multiple angel checks to aggregate instantly.'
+      'Founders waste an average of 142 hours per month on unqualified cold outreach.',
+      'ConnectUp’s swipe interface matches founder metrics directly with verified investor mandates in seconds.',
+      'Data shows response rates increase by 410% when pitch decks adhere to concise micro-format guidelines.'
     ],
     content: `
-      <h2>The Paradigm Shift in Early-Stage Syndication</h2>
-      <p>Historically, early-stage allocations were restricted to private social circles in Sand Hill Road and Mayfair. As tech hubs expand across Austin, Nairobi, Lagos, Berlin, and Singapore, capital distribution must modernize at the speed of software.</p>
-      <p>Through ConnectUp's curated discovery and dispatch architecture, vetted founders match directly with verified angels and institutional partners based on mandate alignment rather than geographic proximity.</p>
-      <blockquote>"Geography is no longer destiny for founders with verifiable velocity."</blockquote>
-      <h3>Key Drivers of the New Syndicate Model</h3>
+      <h2>The Death of the 40-Slide Pitch Deck</h2>
+      <p>For decades, raising venture capital has been an exercise in administrative endurance. Founders craft sprawling slide decks, send hundreds of cold emails into the void, and wait weeks for generic rejections.</p>
+      <p>At ConnectUp, we studied thousands of successful seed rounds and discovered a stark truth: investors make preliminary decisions in under 60 seconds. If your core traction and thesis aren't immediately clear, you're filtered out.</p>
+      <blockquote>"Fundraising shouldn't feel like a second full-time job. It should be a high-velocity exchange of mutual conviction."</blockquote>
+      <h3>Key Pillars of Modern Micro-Pitching</h3>
       <ul>
-        <li><strong>Speed to Term Sheet:</strong> Average founder time to first committed angel cheque dropped from 6 weeks to 8 days.</li>
-        <li><strong>Zero Gatekeeping:</strong> Transparent algorithmic scoring verifies proof of execution, customer traction, and code velocity.</li>
-        <li><strong>Collaborative Due Diligence:</strong> Co-investors review verified metrics, founder pitch decks, and live references in one unified room.</li>
+        <li><strong>Instant Thesis Matching:</strong> Automatically route your metrics to funds actively deploying in your sector.</li>
+        <li><strong>Zero-Noise Introductions:</strong> Cut out middleman brokers and backchannel gatekeepers.</li>
+        <li><strong>Actionable Feedback:</strong> Receive clear term-sheet indicators and structural feedback within 48 hours.</li>
       </ul>
+      <p>Join the thousands of elite founders using ConnectUp to accelerate their capital journey today.</p>
     `,
-    category: 'Ecosystem & Market',
-    badge: 'MARKET INSIGHTS',
-    author: 'Alexander Wright',
-    authorRole: 'Editor-in-Chief, ConnectUp Dispatch',
-    date: 'Sep 28, 2026',
-    readTime: '5 min read',
+    category: 'Venture Insights',
+    badge: 'STRATEGY',
+    author: 'Tariq Vance',
+    authorRole: 'Co-Founder & CEO',
+    date: 'Sep 18, 2026',
+    readTime: '4 min read',
     image: blogArtOfSwipe,
     featured: false,
-    views: '18.9k'
+    views: '18.5k'
   },
   {
     id: 5,
-    company: 'HARMATTAN DEFENSE',
-    title: 'Harmattan closes $80M Series B to scale software-defined defense systems and mesh nodes',
-    excerpt: 'Expanding transatlantic manufacturing capabilities for resilient, jam-proof defense hardware and battlefield communications.',
+    company: 'QUANTUM HEALTH',
+    title: 'Algorithmic Precision in Early-Stage Biotech & Therapeutics Sourcing',
+    excerpt: 'How machine learning graph analysis is transforming life sciences venture capital and clinical trial syndication.',
     takeaways: [
-      'Tripling European hardware assembly plants across 3 allied nations to meet backlog.',
-      'Self-healing radio frequency mesh network maintains unit synchronization under hostile electronic warfare.',
-      'Dual-use architecture applicable to disaster relief, emergency services, and deep-sea exploration.'
+      'Graph neural networks map biochemical pathway patent filings before academic publication.',
+      'Saves institutional venture funds months of manual scientific literature review.',
+      'Enables co- syndication across global bio-clusters in London, Boston, and Zurich.'
     ],
     content: `
-      <h2>Scaling Resilient Defense Infrastructure</h2>
-      <p>Harmattan has finalized an $80 Million Series B round led by premier transatlantic defense technology investors. The capital injection will expand manufacturing capacity for Harmattan's flagship autonomous defense systems.</p>
-      <p>With ongoing geopolitical shifts, modern defense requires software-defined, rapidly deployable hardware capable of operating in satellite-denied or heavily jammed electronic environments.</p>
-      <h3>Key Focus Areas for Series B</h3>
-      <ul>
-        <li><strong>Production Scaling:</strong> Tripling European manufacturing footprint to deliver hardware on accelerated timelines.</li>
-        <li><strong>Electronic Warfare Resilience:</strong> Next-gen mesh networking that maintains unit cohesion under signal jamming.</li>
-        <li><strong>Dual-Use Potential:</strong> Adapting sensor arrays for civilian disaster recovery and search-and-rescue missions.</li>
-      </ul>
-      <p>We continue to support Harmattan's dedicated engineering team as they redefine critical infrastructure protection and strategic autonomy.</p>
+      <h2>Mapping the Frontiers of Biotech Innovation</h2>
+      <p>Investing in early-stage biotechnology has traditionally required specialized PhD analysts spending months combing through peer-reviewed journals and patent databases.</p>
+      <p>Today, graph neural networks developed by our portfolio partners automatically surface emerging therapeutic breakthroughs across global academic institutions.</p>
+      <blockquote>"When you combine domain expertise with real-time semantic graph search, biotech deal sourcing reaches unprecedented velocity."</blockquote>
+      <p>By democratizing access to high-convction life sciences deal flow, ConnectUp empowers specialized angel syndicates to back life-saving therapeutics earlier than ever before.</p>
     `,
-    category: 'Strategic Tech',
-    badge: 'PORTFOLIO NEWS',
-    author: 'David Kim',
-    authorRole: 'Principal, Infrastructure & Defense',
-    date: 'Sep 21, 2026',
-    readTime: '5 min read',
-    image: goldenGate,
+    category: 'DeepTech',
+    badge: 'RESEARCH',
+    author: 'Dr. Aris Thorne',
+    authorRole: 'Partner, Life Sciences',
+    date: 'Sep 10, 2026',
+    readTime: '7 min read',
+    image: blogMatchDeck,
     featured: false,
     views: '9.4k'
   },
   {
     id: 6,
-    company: 'CONNECTUP LABS',
-    title: 'Algorithmic Precision in Deal Flow: Scoring Founder Velocity and Code Commit Rhythm',
-    excerpt: 'How ConnectUp analyzes GitHub commit frequency, user retention cohorts, and payment velocity to generate bias-free investment scores.',
+    company: 'CONNECTUP SUMMIT',
+    title: 'Founders & Investors Summit 2026: Key Takeaways on Sovereign Capital',
+    excerpt: 'Highlights from our annual gathering of 500+ top-decile founders and sovereign fund managers in San Francisco.',
     takeaways: [
-      'Multi-signal telemetry blends open-source commits, revenue API webhooks, and retention decay rates.',
-      'Removes pedigree bias by highlighting actual shipping speed over collegiate pedigree.',
-      'Provides founders with a real-time Benchmark Score to identify areas for metric improvement.'
+      'Over $2.8B in active dry powder represented across attending angel networks and funds.',
+      'Panel discussions centered on autonomous agent workflows and RLS database synchronization.',
+      'Announced global expansion into 12 new European and Asian tech hubs.'
     ],
     content: `
-      <h2>Eliminating the Warm Intro Tax</h2>
-      <p>The traditional venture capital diligence process has long suffered from pedigree bias. Investors frequently fund founders from their alma maters or mutual networks rather than builders with exceptional shipping cadence.</p>
-      <p>ConnectUp's proprietary scoring engine ingests verified telemetry directly from GitHub, Stripe, and PostHog (with founder consent) to construct an objective Velocity Score.</p>
-      <h3>How Velocity is Measured</h3>
-      <ul>
-        <li><strong>Shipping Frequency:</strong> Continuous integration cadence, release regularity, and bug closure rates.</li>
-        <li><strong>Organic Retention:</strong> Cohort persistence curves benchmarked against the top decile of comparable SaaS/fintech peers.</li>
-        <li><strong>Capital Efficiency:</strong> Revenue generated per unit of operational expenditure.</li>
-      </ul>
-      <p>The result is a discovery feed where top builders bubble to the top of investor radars purely based on tangible momentum.</p>
+      <h2>San Francisco Summit Highlights</h2>
+      <p>Last week, ConnectUp hosted its annual Founders & Investors Summit in San Francisco, bringing together over 500 top-decile founders, sovereign wealth managers, and tier-1 venture partners.</p>
+      <p>The overarching theme of this year's gathering was the rise of sovereign capital and autonomous deal syndication across international borders.</p>
+      <blockquote>"The future belongs to founders who build with global liquidity in mind from day one."</blockquote>
+      <p>We extend our deepest gratitude to all speakers, sponsors, and participants who made this milestone event unforgettable.</p>
     `,
-    category: 'Engineering & Data',
-    badge: 'DEEP DIVE',
-    author: 'Dr. Aris Thorne',
-    authorRole: 'Head of Quantitative Intelligence',
-    date: 'Sep 15, 2026',
-    readTime: '8 min read',
+    category: 'Events',
+    badge: 'SUMMIT',
+    author: 'Marcus Sterling',
+    authorRole: 'Head of Investor Relations',
+    date: 'Aug 28, 2026',
+    readTime: '5 min read',
     image: blogAlgorithmic,
     featured: false,
-    views: '24.1k'
-  },
-  {
-    id: 7,
-    company: 'VENTURE METHODOLOGY',
-    title: 'Designing the 10-Slide Deck That Closed 45 Angel Commitments in 72 Hours',
-    excerpt: 'Deconstructing the anatomy of a viral pre-seed pitch deck tailored for mobile-first angel discovery and synchronous syndicate rooms.',
-    takeaways: [
-      'Optimize for 60-second comprehension on mobile screens before deep financial appendices.',
-      'Slide 3 must state the unit economic inflection point with unmistakable clarity.',
-      'Interactive deck links inside ConnectUp permit direct cheque reservation upon viewing.'
-    ],
-    content: `
-      <h2>Mobile-First Pitch Decks for Modern Angels</h2>
-      <p>Modern angel investors review opportunities on their phones between meetings, in transit, or during weekend downtime. Decks designed for 27-inch monitors with wall-to-wall text lose momentum immediately.</p>
-      <p>Here is the proven architecture utilized by the top 10 fastest-closing pre-seed rounds on ConnectUp this quarter.</p>
-      <h3>The Essential 10-Slide Structure</h3>
-      <ul>
-        <li><strong>Slide 1: One-Line Proposition:</strong> What you do and why the market has reached an unavoidable inflection point now.</li>
-        <li><strong>Slide 2: The Wedge:</strong> The specific initial customer persona and why alternatives fail them.</li>
-        <li><strong>Slide 3: Proof of Velocity:</strong> Verifiable metrics showing traction growth month-over-month.</li>
-        <li><strong>Slide 4: Product Experience:</strong> Real video GIF or interactive prototype link rather than mockups.</li>
-        <li><strong>Slide 5: Unit Economics:</strong> Customer acquisition cost and lifetime value trajectory.</li>
-      </ul>
-    `,
-    category: 'Founder Guides',
-    badge: 'PLAYBOOK',
-    author: 'Sophia Sterling',
-    authorRole: 'Founders-in-Residence Lead',
-    date: 'Sep 08, 2026',
-    readTime: '6 min read',
-    image: blogMatchDeck,
-    featured: false,
-    views: '41.3k'
-  },
-  {
-    id: 8,
-    company: 'ANNUAL SUMMIT',
-    title: 'Highlights from the ConnectUp Global Founders & Allocators Summit: London 2026',
-    excerpt: 'Key takeaways, syndicate announcements, and insights from 500+ frontier founders and sovereign wealth allocators.',
-    takeaways: [
-      'Over $320M in syndicate commitments pledged across frontier robotics, AI compute, and energy transition.',
-      'Keynote debates highlighted the emergence of sovereign AI clusters across the UK and Continental Europe.',
-      'Announced ConnectUp Institutional Tier with direct LP allocation pass-throughs.'
-    ],
-    content: `
-      <h2>Connecting Visionaries Across Continents</h2>
-      <p>Last week in London, over 500 early-stage builders, family office directors, and venture general partners gathered for the annual ConnectUp Global Summit. The day was packed with confidential syndicate pitches, deep-dive technical panels, and strategic roundtables.</p>
-      <p>We extend our deepest gratitude to every founder who pitched and every allocator who pledged commitments on our live matching floor.</p>
-    `,
-    category: 'Ecosystem & Market',
-    badge: 'EVENT RECAP',
-    author: 'Alexander Wright',
-    authorRole: 'Editor-in-Chief, ConnectUp Dispatch',
-    date: 'Aug 29, 2026',
-    readTime: '4 min read',
-    image: foundersSummit,
-    featured: false,
-    views: '11.8k'
+    views: '12.1k'
   }
 ];
 
 interface BlogPageProps {
   onBackHome?: () => void;
   onLoginClick?: () => void;
+  onNavigateToAbout?: () => void;
   onNavigateToContact?: () => void;
   onNavigateToSection?: (section: NavPage) => void;
   onLegalView?: (view: 'privacy' | 'terms') => void;
 }
 
-export const BlogPage: React.FC<BlogPageProps> = ({ 
-  onBackHome, 
+export const BlogPage: React.FC<BlogPageProps> = ({
+  onBackHome,
   onLoginClick,
+  onNavigateToAbout,
   onNavigateToContact,
   onNavigateToSection,
   onLegalView
 }) => {
+  const [posts, setPosts] = useState<BlogPost[]>(BLOG_POSTS);
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [sortBy, setSortBy] = useState<'latest' | 'popular'>('latest');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [bookmarkedIds, setBookmarkedIds] = useState<(number | string)[]>([]);
+  const [emailInput, setEmailInput] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
-  const [bookmarkedIds, setBookmarkedIds] = useState<(number | string)[]>([1, 3]);
-  const [heroSlideIndex, setHeroSlideIndex] = useState<number>(0);
-  const [newsletterEmail, setNewsletterEmail] = useState<string>('');
-  const [newsletterSubscribed, setNewsletterSubscribed] = useState(false);
   const [readingProgress, setReadingProgress] = useState(0);
+  const [heroSlideIndex, setHeroSlideIndex] = useState(0);
 
-  // Dynamic posts state initialized from cache or defaults
-  const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
-    try {
-      const saved = localStorage.getItem('connectup_blogs_list');
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      }
-    } catch {}
-    return BLOG_POSTS;
-  });
-
-  // Load latest posts from storage and listen for admin updates
+  // Load custom stored blog posts if any
   useEffect(() => {
-    const loadPosts = async () => {
-      try {
-        const data = await StorageService.getBlogPosts();
-        if (data && data.length > 0) {
-          setBlogPosts(data);
-        }
-      } catch (err) {
-        console.warn('Error loading posts in BlogPage:', err);
-      }
-    };
-    loadPosts();
-
-    const handleUpdate = () => {
-      loadPosts();
-    };
-    window.addEventListener('connectup_blogs_updated', handleUpdate);
-    return () => window.removeEventListener('connectup_blogs_updated', handleUpdate);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    const stored = StorageService.getBlogPosts();
+    if (stored && stored.length > 0) {
+      setPosts([...stored, ...BLOG_POSTS]);
+    }
   }, []);
 
-  // Filter published posts for public view
-  const visiblePosts = blogPosts.filter(p => p.published !== false);
-
-  // Filter featured posts for the hero carousel
-  const featuredPosts = visiblePosts.filter(p => p.featured).length > 0
-    ? visiblePosts.filter(p => p.featured)
-    : visiblePosts.slice(0, 3);
-
-  // Auto-advance hero carousel every 6 seconds unless user pauses
+  // Scroll progress listener for reader view
   useEffect(() => {
-    if (selectedPost) return;
-    if (featuredPosts.length === 0) return;
-    const interval = setInterval(() => {
-      setHeroSlideIndex(prev => (prev + 1) % featuredPosts.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [featuredPosts.length, selectedPost]);
-
-  // Track reading progress on article view
-  useEffect(() => {
-    if (!selectedPost) return;
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
       if (totalHeight > 0) {
-        const currentProgress = (window.scrollY / totalHeight) * 100;
-        setReadingProgress(Math.min(100, Math.max(0, currentProgress)));
+        const progress = (window.scrollY / totalHeight) * 100;
+        setReadingProgress(progress);
       }
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [selectedPost]);
+  }, []);
 
   const handleNavigate = (page: NavPage) => {
     if (page === 'blog') {
       setSelectedPost(null);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (page === 'about') {
+      if (onNavigateToAbout) {
+        onNavigateToAbout();
+      } else {
+        try {
+          window.history.pushState({}, '', '/about');
+        } catch {
+          window.location.hash = '#about';
+        }
+        window.location.reload();
+      }
       return;
     }
     if (page === 'contact') {
@@ -437,7 +342,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({
       }
       return;
     }
-    // Landing page sections ('home', 'about', 'why', 'founders', 'pricing')
+
     if (onNavigateToSection) {
       onNavigateToSection(page);
     } else if (onBackHome) {
@@ -452,65 +357,56 @@ export const BlogPage: React.FC<BlogPageProps> = ({
     }
   };
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [selectedPost]);
-
-  const categories = [
-    'All', 
-    'Portfolio Exit', 
-    'Defense Tech', 
-    'AI Research', 
-    'Ecosystem & Market', 
-    'Founder Guides', 
-    'Engineering & Data'
-  ];
-
-  const toggleBookmark = (id: number | string, e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
-    setBookmarkedIds(prev => 
-      prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
-    );
+  const toggleBookmark = (id: number | string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (bookmarkedIds.includes(id)) {
+      setBookmarkedIds(bookmarkedIds.filter(item => item !== id));
+    } else {
+      setBookmarkedIds([...bookmarkedIds, id]);
+    }
   };
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(window.location.href);
     setCopiedLink(true);
-    setTimeout(() => setCopiedLink(false), 2000);
+    setTimeout(() => setCopiedLink(false), 2500);
   };
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newsletterEmail || !newsletterEmail.includes('@')) return;
-    setNewsletterSubscribed(true);
-    setNewsletterEmail('');
-    setTimeout(() => {
-      // keep subscribed
-    }, 4000);
+    if (emailInput.trim()) {
+      setSubscribed(true);
+      setEmailInput('');
+    }
   };
 
-  // Filter and sort posts
-  const filteredPosts = visiblePosts.filter(post => {
+  const categories = ['All', 'Portfolio Exit', 'Defense Tech', 'AI & Research', 'Venture Insights', 'DeepTech', 'Events'];
+
+  const filteredPosts = posts.filter(post => {
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
-    const matchesSearch = 
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.author.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.company.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          post.company.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
-  }).sort((a, b) => {
-    if (sortBy === 'popular') {
-      const viewsA = parseFloat(String(a.views || '0').replace('k', '')) || 0;
-      const viewsB = parseFloat(String(b.views || '0').replace('k', '')) || 0;
-      return viewsB - viewsA;
-    }
-    return 0;
   });
 
+  const featuredPosts = posts.filter(p => p.featured);
   const currentHeroPost = featuredPosts[heroSlideIndex] || featuredPosts[0];
 
   return (
-    <div className="min-h-screen bg-white text-zinc-900 flex flex-col font-sans selection:bg-[#FFBF00] selection:text-black relative">
+    <div className="min-h-screen bg-[#0A0A0C] text-zinc-100 flex flex-col font-sans selection:bg-[#FFBF00] selection:text-black relative overflow-x-hidden">
+      
+      {/* Immersive Glow Backgrounds */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div 
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] opacity-25 blur-[150px] rounded-full pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle at 50% 20%, rgba(255, 191, 0, 0.35) 0%, rgba(245, 158, 11, 0.1) 50%, transparent 75%)'
+          }}
+        />
+        <div className="absolute top-[1000px] right-[-200px] w-[600px] h-[600px] bg-purple-600/15 blur-[160px] rounded-full pointer-events-none" />
+      </div>
+
       {/* Article Reading Progress Indicator */}
       {selectedPost && (
         <div 
@@ -519,20 +415,20 @@ export const BlogPage: React.FC<BlogPageProps> = ({
         />
       )}
 
-      {/* Shared Landing Navbar in Light Mode */}
+      {/* Shared Landing Navbar in Dark Mode */}
       <LandingNavbar 
         currentPage="blog" 
         onNavigate={handleNavigate} 
         onLoginClick={onLoginClick || (() => {})} 
-        lightMode={true}
+        lightMode={false}
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 pb-20">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-24 relative z-10">
         <AnimatePresence mode="wait">
           {selectedPost ? (
             /* =========================================================================
-               SINGLE BLOG POST VIEW (READER MODE - WHITE BACKGROUND)
+               SINGLE BLOG POST VIEW (READER MODE - DARK OBSIDIAN BACKGROUND)
                ========================================================================= */
             <motion.article 
               key={`post-${selectedPost.id}`}
@@ -546,9 +442,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               <div className="flex items-center justify-between gap-4 mb-8">
                 <button 
                   onClick={() => setSelectedPost(null)}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-sm font-semibold text-zinc-700 hover:text-zinc-950 transition-all cursor-pointer border border-zinc-200 group"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 hover:bg-zinc-800 text-sm font-semibold text-zinc-300 hover:text-white transition-all cursor-pointer border border-zinc-800 group"
                 >
-                  <ArrowLeft className="w-4 h-4 text-amber-600 group-hover:-translate-x-1 transition-transform" />
+                  <ArrowLeft className="w-4 h-4 text-[#FFBF00] group-hover:-translate-x-1 transition-transform" />
                   <span>Back to all stories</span>
                 </button>
 
@@ -557,8 +453,8 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                     onClick={(e) => toggleBookmark(selectedPost.id, e)}
                     className={`p-2.5 rounded-full border transition-all cursor-pointer ${
                       bookmarkedIds.includes(selectedPost.id)
-                        ? 'bg-amber-400 text-black border-amber-400 shadow-xs'
-                        : 'bg-zinc-100 text-zinc-600 border-zinc-200 hover:text-zinc-950 hover:bg-zinc-200'
+                        ? 'bg-[#FFBF00] text-black border-[#FFBF00] shadow-lg shadow-amber-500/20'
+                        : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:text-white hover:bg-zinc-800'
                     }`}
                     title={bookmarkedIds.includes(selectedPost.id) ? 'Saved' : 'Save story'}
                   >
@@ -567,9 +463,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({
 
                   <button 
                     onClick={handleCopyLink}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-xs font-semibold text-zinc-800 transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer"
                   >
-                    {copiedLink ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Share2 className="w-3.5 h-3.5 text-zinc-500" />}
+                    {copiedLink ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Share2 className="w-3.5 h-3.5 text-zinc-400" />}
                     <span>{copiedLink ? 'Copied' : 'Share'}</span>
                   </button>
                 </div>
@@ -578,31 +474,31 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               {/* Story Header */}
               <header className="space-y-6 mb-10">
                 <div className="flex flex-wrap items-center gap-3">
-                  <span className="px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-200 text-xs font-bold tracking-wider uppercase shadow-xs">
+                  <span className="px-3.5 py-1 rounded-full bg-amber-500/10 text-[#FFBF00] border border-amber-500/30 text-xs font-bold tracking-wider uppercase shadow-lg shadow-amber-500/5">
                     {selectedPost.badge}
                   </span>
-                  <span className="text-xs font-mono tracking-wider text-zinc-600 uppercase bg-zinc-100 px-3 py-1 rounded-full border border-zinc-200">
+                  <span className="text-xs font-mono tracking-wider text-zinc-400 uppercase bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800">
                     {selectedPost.company}
                   </span>
                   {selectedPost.views && (
-                    <span className="text-xs text-zinc-500 font-mono flex items-center gap-1 ml-auto">
-                      <TrendingUp className="w-3.5 h-3.5 text-amber-600" /> {selectedPost.views} reads
+                    <span className="text-xs text-zinc-400 font-mono flex items-center gap-1 ml-auto">
+                      <TrendingUp className="w-3.5 h-3.5 text-[#FFBF00]" /> {selectedPost.views} reads
                     </span>
                   )}
                 </div>
 
-                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-zinc-950 tracking-tight leading-tight">
+                <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.08]">
                   {selectedPost.title}
                 </h1>
 
-                <p className="text-lg sm:text-xl text-zinc-600 leading-relaxed font-light">
+                <p className="text-lg sm:text-xl text-zinc-400 leading-relaxed font-light">
                   {selectedPost.excerpt}
                 </p>
 
                 {/* Author Metadata Bar */}
-                <div className="flex flex-wrap items-center justify-between gap-4 py-5 border-y border-zinc-200 text-sm text-zinc-600">
+                <div className="flex flex-wrap items-center justify-between gap-4 py-5 border-y border-zinc-800 text-sm text-zinc-400">
                   <div className="flex items-center gap-3.5">
-                    <div className="w-12 h-12 rounded-full bg-zinc-950 p-2.5 flex items-center justify-center shadow-xs shrink-0 border border-zinc-900/10">
+                    <div className="w-12 h-12 rounded-full bg-zinc-900 p-2.5 flex items-center justify-center shadow-md shrink-0 border border-zinc-800">
                       {selectedPost.authorAvatar ? (
                         <img src={selectedPost.authorAvatar} alt={selectedPost.author} className="w-full h-full object-cover rounded-full" />
                       ) : (
@@ -610,18 +506,18 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                       )}
                     </div>
                     <div>
-                      <p className="font-bold text-zinc-950 leading-tight">{selectedPost.author}</p>
-                      <p className="text-xs text-zinc-500">{selectedPost.authorRole}</p>
+                      <p className="font-bold text-white leading-tight">{selectedPost.author}</p>
+                      <p className="text-xs text-zinc-400">{selectedPost.authorRole}</p>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-5 text-xs">
-                    <div className="flex items-center gap-1.5 text-zinc-600">
-                      <Calendar className="w-4 h-4 text-amber-600" />
+                    <div className="flex items-center gap-1.5 text-zinc-400">
+                      <Calendar className="w-4 h-4 text-[#FFBF00]" />
                       <span>{selectedPost.date}</span>
                     </div>
-                    <div className="flex items-center gap-1.5 text-zinc-600">
-                      <Clock className="w-4 h-4 text-amber-600" />
+                    <div className="flex items-center gap-1.5 text-zinc-400">
+                      <Clock className="w-4 h-4 text-[#FFBF00]" />
                       <span>{selectedPost.readTime}</span>
                     </div>
                   </div>
@@ -629,30 +525,30 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               </header>
 
               {/* Cover Hero Image */}
-              <div className="w-full h-[360px] sm:h-[480px] rounded-3xl overflow-hidden border border-zinc-200 mb-10 shadow-lg relative group">
+              <div className="w-full h-[360px] sm:h-[480px] rounded-[2.5rem] overflow-hidden border border-zinc-800 mb-10 shadow-2xl relative group">
                 <img 
                   src={selectedPost.image} 
                   alt={selectedPost.title}
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-[0.9]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-4 left-6 text-xs text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
-                  Featured Archive Visual • ConnectUp Media
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-6 text-xs text-zinc-300 bg-zinc-950/80 backdrop-blur-md px-4 py-2 rounded-full border border-zinc-800">
+                  Featured Archive Visual • ConnectUp Protocol
                 </div>
               </div>
 
-              {/* Executive Takeaways Box (No star icons) */}
+              {/* Executive Takeaways Box */}
               {selectedPost.takeaways && selectedPost.takeaways.length > 0 && (
-                <div className="mb-10 p-6 sm:p-8 rounded-3xl bg-amber-50/80 border border-amber-200/90 shadow-sm relative overflow-hidden">
+                <div className="mb-10 p-6 sm:p-8 rounded-[2rem] bg-zinc-900/60 border border-zinc-800 shadow-xl relative overflow-hidden backdrop-blur-md">
                   <div className="flex items-center gap-2 mb-4">
-                    <Award className="w-5 h-5 text-amber-600" />
-                    <h3 className="text-base font-bold text-zinc-950 uppercase tracking-wider">Executive Takeaways</h3>
+                    <Award className="w-5 h-5 text-[#FFBF00]" />
+                    <h3 className="text-base font-bold text-white uppercase tracking-wider">Executive Takeaways</h3>
                   </div>
                   <ul className="space-y-3">
                     {selectedPost.takeaways.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-zinc-800 leading-relaxed">
-                        <span className="w-5 h-5 rounded-full bg-amber-400 text-black font-black text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                      <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-zinc-300 leading-relaxed">
+                        <span className="w-6 h-6 rounded-full bg-[#FFBF00] text-zinc-950 font-black text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-md">
                           {idx + 1}
                         </span>
                         <span>{item}</span>
@@ -662,23 +558,23 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                 </div>
               )}
 
-              {/* Main Article Body (Prose Light Mode) */}
-              <div className="bg-zinc-50 border border-zinc-200 rounded-3xl p-6 sm:p-12 shadow-sm mb-12">
+              {/* Main Article Body (Dark Mode Prose) */}
+              <div className="bg-zinc-900/50 border border-zinc-800 rounded-[2.5rem] p-6 sm:p-12 shadow-2xl mb-12 backdrop-blur-xl">
                 <div 
-                  className="prose prose-zinc prose-lg max-w-none text-zinc-700 leading-relaxed 
-                    prose-headings:text-zinc-950 prose-headings:font-serif prose-headings:tracking-tight 
+                  className="prose prose-invert prose-lg max-w-none text-zinc-300 leading-relaxed 
+                    prose-headings:text-white prose-headings:font-serif prose-headings:tracking-tight 
                     prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-4
                     prose-h3:text-xl sm:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
                     prose-p:mb-6 prose-p:leading-relaxed
-                    prose-ul:my-6 prose-li:my-2 prose-li:text-zinc-700
-                    prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:bg-white 
-                    prose-blockquote:p-6 prose-blockquote:rounded-2xl prose-blockquote:text-zinc-900 prose-blockquote:italic prose-blockquote:shadow-xs"
+                    prose-ul:my-6 prose-li:my-2 prose-li:text-zinc-300
+                    prose-blockquote:border-l-4 prose-blockquote:border-[#FFBF00] prose-blockquote:bg-zinc-950/80 
+                    prose-blockquote:p-6 prose-blockquote:rounded-2xl prose-blockquote:text-white prose-blockquote:italic prose-blockquote:shadow-lg"
                   dangerouslySetInnerHTML={{ __html: selectedPost.content }}
                 />
 
                 {/* Author Bio Card at End of Article */}
-                <div className="mt-12 pt-8 border-t border-zinc-200 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-white p-6 rounded-2xl border border-zinc-200/60 shadow-xs">
-                  <div className="w-16 h-16 rounded-full bg-zinc-950 p-3.5 flex items-center justify-center shadow-xs shrink-0 border border-zinc-900/10">
+                <div className="mt-12 pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-zinc-950 p-6 rounded-3xl border border-zinc-800 shadow-xl">
+                  <div className="w-16 h-16 rounded-full bg-zinc-900 p-3.5 flex items-center justify-center shadow-md shrink-0 border border-zinc-800">
                     {selectedPost.authorAvatar ? (
                       <img src={selectedPost.authorAvatar} alt={selectedPost.author} className="w-full h-full object-cover rounded-full" />
                     ) : (
@@ -686,9 +582,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                     )}
                   </div>
                   <div className="text-center sm:text-left space-y-1">
-                    <p className="font-bold text-zinc-950 text-base">{selectedPost.author}</p>
-                    <p className="text-xs text-amber-700 font-semibold">{selectedPost.authorRole}</p>
-                    <p className="text-xs text-zinc-600 leading-relaxed pt-1">
+                    <p className="font-bold text-white text-base">{selectedPost.author}</p>
+                    <p className="text-xs text-[#FFBF00] font-semibold">{selectedPost.authorRole}</p>
+                    <p className="text-xs text-zinc-400 leading-relaxed pt-1">
                       Authoring frontier research and investment dispatches at ConnectUp. Regularly advising syndicate leads on early-stage allocations and technical diligence.
                     </p>
                   </div>
@@ -696,25 +592,25 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               </div>
 
               {/* Callout Action Banner */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-gradient-to-r from-amber-50 via-zinc-100 to-amber-50 border border-amber-200/80 shadow-sm mb-16">
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-950 mb-2 font-serif">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-[2.5rem] bg-gradient-to-r from-amber-500 via-amber-400 to-[#FFBF00] text-zinc-950 shadow-2xl mb-16 relative overflow-hidden">
+                <div className="relative z-10">
+                  <h3 className="text-xl sm:text-2xl font-black tracking-tight mb-2 font-serif">
                     Ready to discover vetted founders & syndicates?
                   </h3>
-                  <p className="text-sm text-zinc-600">
+                  <p className="text-sm text-zinc-900 font-medium">
                     Join over 2,500 active founders and certified angels matching on ConnectUp.
                   </p>
                 </div>
-                <div className="flex items-center gap-3 w-full sm:w-auto">
+                <div className="flex items-center gap-3 w-full sm:w-auto relative z-10 shrink-0">
                   <button 
                     onClick={() => setSelectedPost(null)}
-                    className="flex-1 sm:flex-none px-6 py-3 rounded-full border border-zinc-300 bg-white text-zinc-800 hover:bg-zinc-50 font-bold text-xs transition-colors cursor-pointer shadow-xs"
+                    className="flex-1 sm:flex-none px-6 py-3.5 rounded-full border border-zinc-950 bg-white text-zinc-950 hover:bg-zinc-100 font-bold text-xs transition-colors cursor-pointer shadow-md"
                   >
                     More Stories
                   </button>
                   <button 
                     onClick={onLoginClick}
-                    className="flex-1 sm:flex-none px-6 py-3 rounded-full bg-zinc-950 text-white font-black text-xs hover:bg-zinc-800 transition-all cursor-pointer shadow-md hover:shadow-lg"
+                    className="flex-1 sm:flex-none px-6 py-3.5 rounded-full bg-zinc-950 text-white font-black text-xs hover:bg-zinc-800 transition-all cursor-pointer shadow-lg"
                   >
                     Join ConnectUp
                   </button>
@@ -724,10 +620,10 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               {/* Related Stories Grid */}
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold font-serif text-zinc-950">Recommended For You</h3>
+                  <h3 className="text-2xl font-bold font-serif text-white">Recommended For You</h3>
                   <button 
                     onClick={() => setSelectedPost(null)}
-                    className="text-xs text-amber-700 font-semibold hover:underline flex items-center gap-1 cursor-pointer"
+                    className="text-xs text-[#FFBF00] font-semibold hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     View All <ChevronRight className="w-3.5 h-3.5" />
                   </button>
@@ -738,376 +634,292 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                     <div 
                       key={post.id}
                       onClick={() => setSelectedPost(post)}
-                      className="group cursor-pointer rounded-2xl overflow-hidden bg-white border border-zinc-200 hover:border-zinc-300 transition-all duration-300 p-5 flex flex-col justify-between shadow-xs hover:shadow-md"
+                      className="group cursor-pointer rounded-3xl overflow-hidden bg-zinc-900/60 border border-zinc-800 hover:border-amber-500/40 transition-all duration-300 p-6 flex flex-col justify-between shadow-xl"
                     >
-                      <div className="h-44 rounded-xl overflow-hidden mb-4 relative">
+                      <div className="h-48 rounded-2xl overflow-hidden mb-4 relative">
                         <img 
                           src={post.image} 
                           alt={post.title} 
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-[0.9]" 
                         />
-                        <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold text-zinc-900 border border-zinc-200 uppercase">
+                        <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-[10px] font-bold text-[#FFBF00] border border-zinc-800 uppercase">
                           {post.category}
                         </span>
                       </div>
-                      <div>
-                        <div className="flex items-center gap-2 text-xs text-zinc-500 mb-2">
-                          <span>{post.date}</span>
-                          <span>•</span>
-                          <span>{post.readTime}</span>
-                        </div>
-                        <h4 className="font-serif text-lg font-bold text-zinc-950 group-hover:text-amber-600 transition-colors line-clamp-2 mb-2">
+                      <div className="space-y-2">
+                        <span className="text-[11px] font-mono text-zinc-400 uppercase tracking-widest">{post.company}</span>
+                        <h4 className="text-lg font-bold text-white group-hover:text-[#FFBF00] transition-colors line-clamp-2">
                           {post.title}
                         </h4>
-                        <p className="text-xs text-zinc-600 line-clamp-2">
-                          {post.excerpt}
-                        </p>
+                      </div>
+                      <div className="mt-6 pt-4 border-t border-zinc-800 flex items-center justify-between text-xs text-zinc-400">
+                        <span>{post.date}</span>
+                        <span className="font-bold text-[#FFBF00] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                          Read Story <ArrowRight className="w-3.5 h-3.5" />
+                        </span>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
+
             </motion.article>
           ) : (
             /* =========================================================================
-               BLOG LISTING INDEX (HOMEPAGE VIEW - WHITE BACKGROUND)
+               BLOG INDEX VIEW (DARK OBSIDIAN THEME)
                ========================================================================= */
-            <div className="space-y-14">
+            <div className="space-y-16">
               
-              {/* TOP HERO BANNER / CAROUSEL SLIDER (LIGHT LUXURY EDITORIAL STYLE) */}
-              <section className="relative rounded-3xl overflow-hidden border border-zinc-200 bg-zinc-50 shadow-md">
-                <div className="relative min-h-[460px] lg:min-h-[500px] grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
-                  
-                  {/* Left Column: Visual Cover */}
-                  <div className="lg:col-span-7 relative h-[260px] sm:h-[320px] lg:h-full overflow-hidden">
-                    <motion.img 
-                      key={`hero-img-${currentHeroPost.id}`}
-                      initial={{ scale: 1.08, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 0.7 }}
-                      src={currentHeroPost.image} 
-                      alt={currentHeroPost.title}
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black/50 lg:from-transparent via-transparent to-transparent pointer-events-none" />
-                    
-                    {/* Badge on Image (No star icons) */}
-                    <div className="absolute top-5 left-5 flex items-center gap-2">
-                      <span className="px-3.5 py-1.5 rounded-full bg-amber-400 text-black text-[11px] font-black tracking-wider uppercase shadow-md flex items-center gap-1.5">
-                        <TrendingUp className="w-3.5 h-3.5" />
-                        {currentHeroPost.badge}
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-zinc-900 text-[11px] font-mono border border-zinc-200 uppercase font-bold shadow-xs">
-                        {currentHeroPost.company}
-                      </span>
-                    </div>
+              {/* Hero Banner Header */}
+              <div className="text-center max-w-3xl mx-auto space-y-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/35 text-[#FFBF00] text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-amber-500/5 backdrop-blur-md"
+                >
+                  <BookOpen size={14} className="text-[#FFBF00]" />
+                  ConnectUp Research & Dispatch
+                </motion.div>
 
-                    {/* Bookmark on Hero */}
-                    <button
-                      onClick={(e) => toggleBookmark(currentHeroPost.id, e)}
-                      className={`absolute top-5 right-5 p-2.5 rounded-full backdrop-blur-md border transition-all cursor-pointer ${
-                        bookmarkedIds.includes(currentHeroPost.id)
-                          ? 'bg-amber-400 text-black border-amber-400 shadow-md'
-                          : 'bg-white/90 text-zinc-700 border-zinc-200 hover:bg-white shadow-xs'
-                      }`}
-                      title={bookmarkedIds.includes(currentHeroPost.id) ? 'Saved' : 'Save story'}
-                    >
-                      <Bookmark className="w-4 h-4 fill-current" />
-                    </button>
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="text-4xl sm:text-7xl font-black text-white tracking-tight leading-[1.05]"
+                >
+                  Frontier Insights & <br />
+                  <span className="bg-gradient-to-r from-amber-200 via-[#FFBF00] to-amber-500 bg-clip-text text-transparent italic font-serif font-light">Venture Dispatches.</span>
+                </motion.h1>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="text-base sm:text-xl text-zinc-400 font-light leading-relaxed"
+                >
+                  Deep-dive analysis on portfolio exits, AI architecture, defense tech, and modern venture syndication.
+                </motion.p>
+              </div>
+
+              {/* Featured Hero Article Carousel Card */}
+              {currentHeroPost && searchQuery === '' && selectedCategory === 'All' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7 }}
+                  onClick={() => setSelectedPost(currentHeroPost)}
+                  className="group cursor-pointer rounded-[3rem] overflow-hidden bg-zinc-900/60 border border-zinc-800 hover:border-amber-500/40 transition-all duration-500 shadow-2xl grid lg:grid-cols-12 gap-0 relative backdrop-blur-xl"
+                >
+                  <div className="lg:col-span-7 relative min-h-[340px] sm:min-h-[440px] overflow-hidden">
+                    <img
+                      src={currentHeroPost.image}
+                      alt={currentHeroPost.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-[0.9]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-transparent to-transparent lg:hidden" />
+                    <span className="absolute top-6 left-6 px-4 py-1.5 rounded-full bg-zinc-950/80 backdrop-blur-md text-xs font-black text-[#FFBF00] border border-zinc-800 uppercase tracking-widest">
+                      ★ Featured Dispatch
+                    </span>
                   </div>
 
-                  {/* Right Column: Hero Content */}
-                  <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between bg-zinc-50 relative z-10 border-t lg:border-t-0 lg:border-l border-zinc-200">
+                  <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between space-y-6">
                     <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-xs font-mono text-zinc-500">
-                        <span className="text-amber-700 font-bold">STORY 0{heroSlideIndex + 1}</span>
-                        <span>/</span>
-                        <span>0{featuredPosts.length}</span>
-                        <span>•</span>
-                        <span>{currentHeroPost.date}</span>
+                      <div className="flex items-center gap-3">
+                        <span className="px-3 py-1 rounded-full bg-amber-500/10 text-[#FFBF00] border border-amber-500/30 text-xs font-bold uppercase tracking-wider">
+                          {currentHeroPost.badge}
+                        </span>
+                        <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">{currentHeroPost.company}</span>
                       </div>
-
-                      <h2 
-                        onClick={() => setSelectedPost(currentHeroPost)}
-                        className="font-serif text-2xl sm:text-3xl lg:text-3xl xl:text-4xl font-bold text-zinc-950 hover:text-amber-600 transition-colors leading-tight cursor-pointer"
-                      >
+                      <h2 className="text-2xl sm:text-4xl font-black text-white group-hover:text-[#FFBF00] transition-colors leading-tight font-serif">
                         {currentHeroPost.title}
                       </h2>
-
-                      <p className="text-sm text-zinc-600 leading-relaxed line-clamp-3">
+                      <p className="text-sm sm:text-base text-zinc-400 font-light line-clamp-3 leading-relaxed">
                         {currentHeroPost.excerpt}
                       </p>
                     </div>
 
-                    <div className="pt-6 mt-6 border-t border-zinc-200 space-y-5">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-full bg-zinc-950 p-2 flex items-center justify-center shadow-xs shrink-0 border border-zinc-900/10">
-                            {currentHeroPost.authorAvatar ? (
-                              <img src={currentHeroPost.authorAvatar} alt={currentHeroPost.author} className="w-full h-full object-cover rounded-full" />
-                            ) : (
-                              <ConnectUpLogoIcon className="w-full h-full" />
-                            )}
-                          </div>
-                          <div>
-                            <p className="text-xs font-bold text-zinc-950">{currentHeroPost.author}</p>
-                            <p className="text-[11px] text-zinc-500">{currentHeroPost.readTime}</p>
-                          </div>
+                    <div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-zinc-950 p-2 border border-zinc-800">
+                          <ConnectUpLogoIcon className="w-full h-full" />
                         </div>
-
-                        <button 
-                          onClick={() => setSelectedPost(currentHeroPost)}
-                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-950 text-white font-black text-xs hover:bg-zinc-800 transition-all cursor-pointer shadow-md"
-                        >
-                          <span>Read Story</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </button>
-                      </div>
-
-                      {/* Slider Controls (Chevrons + Dots) */}
-                      <div className="flex items-center justify-between pt-2">
-                        <div className="flex items-center gap-2">
-                          {featuredPosts.map((_, idx) => (
-                            <button
-                              key={idx}
-                              onClick={() => setHeroSlideIndex(idx)}
-                              className={`h-1.5 rounded-full transition-all cursor-pointer ${
-                                idx === heroSlideIndex ? 'w-8 bg-zinc-950' : 'w-2 bg-zinc-300 hover:bg-zinc-400'
-                              }`}
-                              aria-label={`Go to slide ${idx + 1}`}
-                            />
-                          ))}
-                        </div>
-
-                        <div className="flex items-center gap-1.5">
-                          <button 
-                            onClick={() => setHeroSlideIndex(prev => (prev - 1 + featuredPosts.length) % featuredPosts.length)}
-                            className="p-2 rounded-full bg-white hover:bg-zinc-100 text-zinc-800 transition-colors cursor-pointer border border-zinc-200 shadow-xs"
-                            aria-label="Previous story"
-                          >
-                            <ArrowLeft className="w-3.5 h-3.5" />
-                          </button>
-                          <button 
-                            onClick={() => setHeroSlideIndex(prev => (prev + 1) % featuredPosts.length)}
-                            className="p-2 rounded-full bg-white hover:bg-zinc-100 text-zinc-800 transition-colors cursor-pointer border border-zinc-200 shadow-xs"
-                            aria-label="Next story"
-                          >
-                            <ArrowRight className="w-3.5 h-3.5" />
-                          </button>
+                        <div>
+                          <p className="text-xs font-bold text-white">{currentHeroPost.author}</p>
+                          <p className="text-[10px] text-zinc-400">{currentHeroPost.date} • {currentHeroPost.readTime}</p>
                         </div>
                       </div>
+                      <span className="w-10 h-10 rounded-full bg-[#FFBF00] text-zinc-950 flex items-center justify-center font-bold group-hover:scale-110 transition-transform shadow-lg">
+                        <ArrowRight size={18} />
+                      </span>
                     </div>
                   </div>
-                </div>
-              </section>
+                </motion.div>
+              )}
 
-              {/* SEARCH & CATEGORY FILTER BAR */}
-              <section className="space-y-6">
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-                  <div>
-                    <h2 className="font-serif text-3xl font-bold text-zinc-950 tracking-tight">
-                      Explore Recent Dispatches
-                    </h2>
-                    <p className="text-zinc-600 text-sm mt-1">
-                      Curated insights from founders, investors, and engineers.
-                    </p>
-                  </div>
-
-                  {/* Search and Sort */}
-                  <div className="flex flex-wrap items-center gap-3">
-                    {/* Search Input */}
-                    <div className="relative min-w-[240px] sm:min-w-[280px]">
-                      <Search className="w-4 h-4 text-zinc-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
-                      <input 
-                        type="text"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        placeholder="Search themes, founders, funds..."
-                        className="w-full pl-10 pr-9 py-2.5 rounded-full bg-zinc-50 border border-zinc-200 text-zinc-900 placeholder-zinc-400 text-xs focus:outline-none focus:bg-white focus:border-zinc-400 transition-colors shadow-xs"
-                      />
-                      {searchQuery && (
-                        <button 
-                          onClick={() => setSearchQuery('')}
-                          className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-700"
-                        >
-                          <X className="w-3.5 h-3.5" />
-                        </button>
-                      )}
-                    </div>
-
-                    {/* Sort Toggle */}
-                    <div className="inline-flex rounded-full bg-zinc-100 p-1 border border-zinc-200 text-xs">
-                      <button
-                        onClick={() => setSortBy('latest')}
-                        className={`px-3 py-1.5 rounded-full font-medium transition-colors cursor-pointer ${
-                          sortBy === 'latest' ? 'bg-white text-zinc-950 font-bold shadow-xs' : 'text-zinc-600 hover:text-zinc-950'
-                        }`}
-                      >
-                        Latest
-                      </button>
-                      <button
-                        onClick={() => setSortBy('popular')}
-                        className={`px-3 py-1.5 rounded-full font-medium transition-colors cursor-pointer ${
-                          sortBy === 'popular' ? 'bg-zinc-950 text-white font-bold shadow-xs' : 'text-zinc-600 hover:text-zinc-950'
-                        }`}
-                      >
-                        Most Read
-                      </button>
-                    </div>
-                  </div>
+              {/* Search & Category Filter Bar */}
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-zinc-800">
+                {/* Categories */}
+                <div className="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 no-scrollbar">
+                  {categories.map((cat) => (
+                    <button
+                      key={cat}
+                      onClick={() => setSelectedCategory(cat)}
+                      className={`px-5 py-2.5 rounded-full text-xs font-black uppercase tracking-wider transition-all shrink-0 cursor-pointer ${
+                        selectedCategory === cat
+                          ? 'bg-[#FFBF00] text-zinc-950 shadow-lg shadow-amber-500/20'
+                          : 'bg-zinc-900/80 text-zinc-400 hover:text-white border border-zinc-800'
+                      }`}
+                    >
+                      {cat}
+                    </button>
+                  ))}
                 </div>
 
-              </section>
-
-              {/* 3-COLUMN ARTICLE GRID (WHITE BACKGROUND CARDS) */}
-              <section>
-                {filteredPosts.length > 0 ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                    {filteredPosts.map(post => {
-                      const isBookmarked = bookmarkedIds.includes(post.id);
-                      return (
-                        <div 
-                          key={post.id}
-                          onClick={() => setSelectedPost(post)}
-                          className="group cursor-pointer rounded-3xl overflow-hidden bg-white border border-zinc-200 hover:border-zinc-300 transition-all duration-300 flex flex-col shadow-xs hover:shadow-xl hover:-translate-y-1.5 relative"
-                        >
-                          {/* Image Thumbnail with Overlay Badges */}
-                          <div className="relative h-56 sm:h-60 overflow-hidden bg-zinc-100">
-                            <img 
-                              src={post.image} 
-                              alt={post.title}
-                              referrerPolicy="no-referrer"
-                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            
-                            {/* Floating Category Tag */}
-                            <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-zinc-900 text-[10px] font-bold border border-zinc-200 uppercase tracking-wider shadow-xs">
-                              {post.category}
-                            </span>
-
-                            {/* Bookmark Action */}
-                            <button
-                              onClick={(e) => toggleBookmark(post.id, e)}
-                              className={`absolute top-4 right-4 p-2 rounded-full backdrop-blur-md border transition-all cursor-pointer ${
-                                isBookmarked 
-                                  ? 'bg-amber-400 text-black border-amber-400 shadow-xs' 
-                                  : 'bg-white/80 text-zinc-700 hover:text-zinc-950 border-zinc-200 hover:bg-white shadow-xs'
-                              }`}
-                              title={isBookmarked ? 'Saved' : 'Save article'}
-                            >
-                              <Bookmark className="w-3.5 h-3.5 fill-current" />
-                            </button>
-                          </div>
-
-                          {/* Card Content */}
-                          <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                            <div className="space-y-2.5">
-                              {/* Metadata line */}
-                              <div className="flex items-center justify-between text-[11px] text-zinc-500 font-mono">
-                                <span>{post.date}</span>
-                                <span className="flex items-center gap-1 text-zinc-500">
-                                  <Clock className="w-3 h-3 text-amber-600" /> {post.readTime}
-                                </span>
-                              </div>
-
-                              {/* Title */}
-                              <h3 className="font-serif text-xl font-bold text-zinc-950 group-hover:text-amber-600 transition-colors leading-snug line-clamp-2">
-                                {post.title}
-                              </h3>
-
-                              {/* Excerpt */}
-                              <p className="text-xs sm:text-sm text-zinc-600 line-clamp-2 leading-relaxed">
-                                {post.excerpt}
-                              </p>
-                            </div>
-
-                            {/* Author & Read Arrow Footer */}
-                            <div className="pt-4 border-t border-zinc-100 flex items-center justify-between text-xs">
-                              <div className="flex items-center gap-2.5">
-                                <div className="w-7 h-7 rounded-full bg-zinc-950 p-1.5 flex items-center justify-center shadow-2xs shrink-0 border border-zinc-900/10">
-                                  {post.authorAvatar ? (
-                                    <img src={post.authorAvatar} alt={post.author} className="w-full h-full object-cover rounded-full" />
-                                  ) : (
-                                    <ConnectUpLogoIcon className="w-full h-full" />
-                                  )}
-                                </div>
-                                <span className="font-medium text-zinc-700 text-xs truncate max-w-[120px]">
-                                  {post.author}
-                                </span>
-                              </div>
-
-                              <span className="flex items-center gap-1 font-semibold text-amber-600 group-hover:translate-x-1 transition-transform">
-                                Read <ChevronRight className="w-3.5 h-3.5" />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                ) : (
-                  <div className="text-center py-20 border border-dashed border-zinc-200 rounded-3xl bg-zinc-50">
-                    <BookOpen className="w-12 h-12 text-zinc-400 mx-auto mb-4" />
-                    <h3 className="text-xl font-bold text-zinc-950 mb-2 font-serif">No articles found</h3>
-                    <p className="text-sm text-zinc-600 mb-6 max-w-sm mx-auto">
-                      We couldn't find any articles matching &ldquo;{searchQuery || selectedCategory}&rdquo;. Try another filter or keyword.
-                    </p>
+                {/* Search Input */}
+                <div className="relative w-full md:w-72">
+                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search dispatches..."
+                    className="w-full pl-11 pr-4 py-2.5 rounded-full bg-zinc-900/80 border border-zinc-800 text-white placeholder-zinc-500 text-xs focus:outline-none focus:border-amber-500 transition-all shadow-inner"
+                  />
+                  {searchQuery && (
                     <button 
-                      onClick={() => { setSelectedCategory('All'); setSearchQuery(''); }}
-                      className="px-6 py-2.5 rounded-full bg-zinc-950 text-white font-bold text-xs hover:bg-zinc-800 transition-colors cursor-pointer"
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white text-xs"
                     >
-                      Reset All Filters
+                      <X size={14} />
                     </button>
-                  </div>
-                )}
-              </section>
-
-              {/* NEWSLETTER SUBSCRIPTION BANNER (LIGHT EDITORIAL) */}
-              <section className="relative rounded-3xl overflow-hidden p-8 sm:p-12 bg-gradient-to-br from-amber-50 via-zinc-50 to-amber-50/60 border border-amber-200/80 shadow-sm">
-                <div className="max-w-2xl relative z-10 space-y-4">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-200 text-xs font-bold uppercase tracking-wider">
-                    <Mail className="w-3.5 h-3.5" />
-                    Weekly Dispatch
-                  </div>
-                  <h3 className="font-serif text-3xl sm:text-4xl font-bold text-zinc-950 tracking-tight">
-                    Stay ahead of private markets and frontier AI.
-                  </h3>
-                  <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
-                    Join over 15,000 angels, venture partners, and deeptech founders receiving our curated Sunday night syndicate breakdown. Zero noise, high signal.
-                  </p>
-
-                  <form onSubmit={handleSubscribe} className="pt-2 flex flex-col sm:flex-row gap-3">
-                    <input 
-                      type="email"
-                      value={newsletterEmail}
-                      onChange={(e) => setNewsletterEmail(e.target.value)}
-                      placeholder="Enter your work email..."
-                      className="flex-1 px-5 py-3 rounded-full bg-white border border-zinc-300 text-zinc-900 placeholder-zinc-400 text-sm focus:outline-none focus:border-zinc-500 shadow-xs"
-                      required
-                    />
-                    <button 
-                      type="submit"
-                      className="px-8 py-3 rounded-full bg-zinc-950 text-white font-black text-xs hover:bg-zinc-800 transition-all cursor-pointer shadow-md shrink-0"
-                    >
-                      {newsletterSubscribed ? 'Subscribed ✓' : 'Subscribe Free'}
-                    </button>
-                  </form>
-                  {newsletterSubscribed && (
-                    <p className="text-xs text-emerald-700 font-semibold animate-fadeIn">
-                      ✓ Welcome aboard! Check your inbox for the latest dispatch.
-                    </p>
                   )}
                 </div>
-              </section>
+              </div>
+
+              {/* Blog Posts Grid */}
+              {filteredPosts.length === 0 ? (
+                <div className="text-center py-20 bg-zinc-900/40 border border-zinc-800 rounded-[2.5rem]">
+                  <p className="text-lg text-zinc-400 font-light mb-4">No dispatches found matching "{searchQuery}"</p>
+                  <button
+                    onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
+                    className="px-6 py-3 rounded-full bg-[#FFBF00] text-zinc-950 font-black text-xs uppercase tracking-wider cursor-pointer"
+                  >
+                    Reset Filters
+                  </button>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {filteredPosts.map((post, idx) => (
+                    <motion.article
+                      key={post.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: idx * 0.05 }}
+                      onClick={() => setSelectedPost(post)}
+                      className="group cursor-pointer rounded-[2.5rem] overflow-hidden bg-zinc-900/60 border border-zinc-800 hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between shadow-xl relative"
+                    >
+                      <div>
+                        {/* Cover Image */}
+                        <div className="aspect-[16/10] w-full overflow-hidden relative">
+                          <img
+                            src={post.image}
+                            alt={post.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-[0.9]"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent opacity-60" />
+                          <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-[10px] font-black uppercase tracking-widest text-[#FFBF00] border border-zinc-800">
+                            {post.category}
+                          </span>
+                          <button
+                            onClick={(e) => toggleBookmark(post.id, e)}
+                            className={`absolute top-4 right-4 p-2 rounded-full backdrop-blur-md border transition-all cursor-pointer ${
+                              bookmarkedIds.includes(post.id)
+                                ? 'bg-[#FFBF00] text-black border-[#FFBF00]'
+                                : 'bg-zinc-950/80 text-zinc-300 border-zinc-800 hover:text-white'
+                            }`}
+                          >
+                            <Bookmark className="w-3.5 h-3.5 fill-current" />
+                          </button>
+                        </div>
+
+                        {/* Content */}
+                        <div className="p-6 sm:p-8 space-y-3">
+                          <div className="flex items-center justify-between text-xs text-zinc-400 font-mono">
+                            <span className="uppercase tracking-widest text-zinc-400">{post.company}</span>
+                            <span>{post.readTime}</span>
+                          </div>
+                          <h3 className="text-xl font-bold text-white group-hover:text-[#FFBF00] transition-colors line-clamp-2 leading-snug font-serif">
+                            {post.title}
+                          </h3>
+                          <p className="text-sm text-zinc-400 font-light line-clamp-3 leading-relaxed">
+                            {post.excerpt}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="p-6 sm:p-8 pt-0 flex items-center justify-between text-xs text-zinc-400 border-t border-zinc-800/80 mt-4">
+                        <span className="font-semibold text-zinc-300">{post.date}</span>
+                        <span className="font-bold text-[#FFBF00] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                          Read Dispatch <ArrowRight className="w-3.5 h-3.5" />
+                        </span>
+                      </div>
+                    </motion.article>
+                  ))}
+                </div>
+              )}
+
+              {/* Newsletter Signup Section */}
+              <div className="mt-24 p-10 sm:p-16 rounded-[3rem] bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 shadow-2xl relative overflow-hidden text-center max-w-4xl mx-auto">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(255,191,0,0.1)_0%,transparent_70%)] pointer-events-none" />
+                <div className="relative z-10 max-w-xl mx-auto space-y-6">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/35 flex items-center justify-center text-[#FFBF00] mx-auto shadow-lg">
+                    <Mail size={24} />
+                  </div>
+                  <h3 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                    Never Miss a Venture Dispatch
+                  </h3>
+                  <p className="text-zinc-400 font-light text-sm sm:text-base">
+                    Get weekly updates on venture syndicates, AI tech breakthroughs, and exclusive portfolio exits delivered straight to your inbox.
+                  </p>
+
+                  {subscribed ? (
+                    <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-[#FFBF00] text-sm font-bold animate-pulse">
+                      ✓ Successfully subscribed to ConnectUp dispatches!
+                    </div>
+                  ) : (
+                    <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 pt-2">
+                      <input
+                        type="email"
+                        required
+                        value={emailInput}
+                        onChange={(e) => setEmailInput(e.target.value)}
+                        placeholder="Enter your work email..."
+                        className="flex-1 px-6 py-4 rounded-full bg-zinc-950 border border-zinc-800 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-amber-500 transition-all shadow-inner"
+                      />
+                      <button
+                        type="submit"
+                        className="px-8 py-4 rounded-full bg-[#FFBF00] hover:bg-amber-400 text-zinc-950 font-black text-xs uppercase tracking-[0.15em] transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,191,0,0.2)] cursor-pointer shrink-0 flex items-center justify-center gap-2"
+                      >
+                        <span>Subscribe</span>
+                        <Send size={14} />
+                      </button>
+                    </form>
+                  )}
+                  <p className="text-[11px] text-zinc-500">No spam. Unsubscribe at any time with one click.</p>
+                </div>
+              </div>
 
             </div>
           )}
         </AnimatePresence>
       </main>
 
-      {/* Shared Landing Footer */}
-      <FooterSection5 onNavigate={handleNavigate} onLegalView={onLegalView} />
+      {/* Footer */}
+      <FooterSection5
+        onLegalView={onLegalView || (() => {})}
+        onNavigate={handleNavigate}
+      />
     </div>
   );
 };

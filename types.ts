@@ -5,7 +5,7 @@ export enum UserRole {
   ADMIN = 'ADMIN'
 }
 
-export type AppState = 'INITIALIZING' | 'LANDING' | 'SPLASH' | 'AUTH' | 'ADMIN_AUTH' | 'MAIN_APP' | 'BLOG' | 'CONTACT';
+export type AppState = 'INITIALIZING' | 'LANDING' | 'SPLASH' | 'AUTH' | 'ADMIN_AUTH' | 'MAIN_APP' | 'BLOG' | 'CONTACT' | 'ABOUT';
 
 // UI Types (Domain Entities)
 

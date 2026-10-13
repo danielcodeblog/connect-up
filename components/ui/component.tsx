@@ -68,7 +68,7 @@ export function ParallaxComponent() {
             />
             
             <div data-parallax-layer="3" className="absolute top-[40%] sm:top-[42%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 flex flex-col items-center justify-center w-full px-4 text-center">
-              <h2 className="text-white text-[3.25rem] leading-[0.9] sm:text-7xl md:text-[8rem] lg:text-[10rem] font-black tracking-tighter drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)] opacity-100 text-center">
+              <h2 className="text-white text-4xl sm:text-6xl md:text-[8rem] lg:text-[10rem] font-black tracking-tighter drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)] opacity-100 text-center">
                 Fundraise. <br/>
                 <TypewriterSequence 
                   segments={[{ text: "without the", className: "font-display font-light text-[#FFBF00]" }]} 

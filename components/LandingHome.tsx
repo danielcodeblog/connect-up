@@ -15,12 +15,14 @@ export const LandingHome = ({ onNavigate, onLoginClick, showVideo }: HomeViewPro
   const homeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Aggressive hero animation
-    const tl = gsap.timeline();
-    tl.fromTo(homeRef.current,
-      { scale: 0.95, opacity: 0, rotation: -1, y: 30 },
-      { scale: 1, opacity: 1, rotation: 0, y: 0, duration: 1.2, ease: "power4.out" }
-    );
+    const ctx = gsap.context(() => {
+      gsap.fromTo(homeRef.current,
+        { opacity: 0, y: 25 },
+        { opacity: 1, y: 0, duration: 1.1, ease: "power3.out" }
+      );
+    }, homeRef);
+
+    return () => ctx.revert();
   }, []);
 
   return (

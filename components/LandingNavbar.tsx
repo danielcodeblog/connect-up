@@ -108,12 +108,12 @@ export const LandingNavbar: React.FC<LandingNavbarProps> = ({
             </div>
 
             {/* Navigation Links */}
-            <nav className="flex flex-col items-center justify-start sm:justify-center flex-1 gap-4 mt-6 px-2 md:gap-8 md:mt-8 md:px-12 pt-2 sm:pt-6 md:pt-0">
+            <nav className="flex flex-col items-center justify-center flex-1 gap-3 sm:gap-6 my-4 px-2 md:gap-8 md:px-12">
               {navPages.map((page) => (
                 <button
                   key={page}
                   onClick={() => handlePageSelect(page)}
-                  className={`block w-full text-center text-4xl sm:text-5xl md:text-7xl font-sans font-black transition-colors tracking-tighter leading-none uppercase cursor-pointer ${
+                  className={`block w-full text-center text-3xl sm:text-5xl md:text-7xl font-sans font-black transition-colors tracking-tighter leading-none uppercase cursor-pointer py-1 ${
                     currentPage === page ? 'text-[#FFBF00]' : 'text-white hover:text-[#FFBF00]'
                   }`}
                 >
