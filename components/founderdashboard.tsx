@@ -16,6 +16,7 @@ import {
 import UserProfileView from './UserProfileView';
 import { PitchEditor } from './PitchEditor';
 import { PitchSimulator } from './PitchSimulator';
+import { ConnectUpIcon } from './ui/ConnectUpLogo';
 
 interface FounderDashboardProps {
   userProfile?: {
@@ -293,11 +294,12 @@ const FounderDashboard: React.FC<FounderDashboardProps> = React.memo(({
         <div className={`sticky top-0 left-0 right-0 w-full px-4 py-3 sm:px-6 sm:py-4 safe-area-top z-[40] transition-all duration-200 backdrop-blur-xl bg-white/70 dark:bg-zinc-950/70 border-b border-zinc-200/60 dark:border-zinc-800/60 ${isEditingDeck ? '-translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
           <div className="flex items-center justify-between w-full max-w-6xl mx-auto">
             {/* ConnectUp Brand Logo on the left */}
-            <div className="flex items-center select-none gap-2">
+            <div className="flex items-center select-none gap-2.5">
               {onNavigateHome && (
                 <button onClick={onNavigateHome} className="p-1 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors" title="Home">
                 </button>
               )}
+              <ConnectUpIcon className="w-6 h-6 sm:w-7 sm:h-7" />
               <span className="font-display font-black text-lg sm:text-2xl tracking-tighter text-zinc-900 dark:text-white">
                 Connect<span className="text-amber-400">Up</span>
               </span>

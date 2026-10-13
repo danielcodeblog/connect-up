@@ -8,6 +8,7 @@ import { UserRole } from '../types';
 import { supabase } from '../services/supabaseClient';
 import { StorageService } from '../services/storageService';
 import authImage from '../src/assets/images/com.png';
+import { ConnectUpIcon } from './ui/ConnectUpLogo';
 
 interface AuthScreenProps {
   onComplete: (role: UserRole, email?: string) => void;
@@ -398,8 +399,9 @@ const AuthScreen: React.FC<AuthScreenProps> = React.memo(({ onComplete, onViewLe
                     animate={{ opacity: 1, y: 0 }}
                     className="mb-8"
                   >
-                    <h1 className="text-4xl font-display font-bold tracking-tighter leading-none select-none text-white">
-                       Connect<span className="text-amber-400">Up.</span>
+                    <h1 className="text-4xl font-display font-bold tracking-tighter leading-none select-none text-white flex items-center justify-center gap-3">
+                       <ConnectUpIcon className="w-9 h-9" />
+                       <span>Connect<span className="text-amber-400">Up</span></span>
                     </h1>
                   </motion.div>
                   {subtitle && (
@@ -491,8 +493,9 @@ const AuthScreen: React.FC<AuthScreenProps> = React.memo(({ onComplete, onViewLe
          <div className="relative z-10 w-full max-w-lg px-10 flex flex-col items-center">
              {/* Logo Section */}
              <div className="mb-24 md:mb-32 py-4">
-                 <h1 ref={logoRef} className="text-6xl md:text-8xl font-display font-bold tracking-tighter leading-none select-none">
-                    Connect<span className="text-amber-400">Up.</span>
+                 <h1 ref={logoRef} className="text-6xl md:text-8xl font-display font-bold tracking-tighter leading-none select-none flex items-center justify-center gap-4">
+                    <ConnectUpIcon className="w-14 h-14 md:w-20 md:h-20" />
+                    <span>Connect<span className="text-amber-400">Up</span></span>
                  </h1>
              </div>
  
@@ -542,8 +545,9 @@ const AuthScreen: React.FC<AuthScreenProps> = React.memo(({ onComplete, onViewLe
              <div className="col-span-12 md:col-span-5 p-6 sm:p-14 lg:p-18 flex flex-col justify-between flex-1 h-full overflow-y-auto md:overflow-y-hidden no-scrollbar bg-white md:border-r md:border-zinc-100 shadow-[0_24px_60px_rgba(0,0,0,0.05)]">
                  {/* Logo */}
                  <div className="flex items-center justify-center mb-8 select-none">
-                    <div className="flex items-center">
-                       <span className="font-display font-black text-xl tracking-tight text-zinc-900 blur-[3px]">Connect<span className="text-amber-400">Up.</span></span>
+                    <div className="flex items-center gap-2 blur-[3px]">
+                       <ConnectUpIcon className="w-6 h-6" />
+                       <span className="font-display font-black text-xl tracking-tight text-zinc-900">Connect<span className="text-amber-400">Up</span></span>
                     </div>
                  </div>
 
@@ -719,8 +723,9 @@ const AuthScreen: React.FC<AuthScreenProps> = React.memo(({ onComplete, onViewLe
              <div className="col-span-12 md:col-span-5 p-10 sm:p-14 lg:p-18 flex flex-col justify-between flex-1 h-full overflow-y-hidden no-scrollbar bg-white md:border-r md:border-zinc-100 shadow-[0_24px_60px_rgba(0,0,0,0.05)]">
                 {/* Logo */}
                 <div className="flex items-center justify-center mb-8 select-none">
-                    <div className="flex items-center">
-                       <span className="font-display font-black text-xl tracking-tight text-zinc-900 blur-[3px]">Connect<span className="text-brand-primary">Up.</span></span>
+                    <div className="flex items-center gap-2 blur-[3px]">
+                       <ConnectUpIcon className="w-6 h-6" />
+                       <span className="font-display font-black text-xl tracking-tight text-zinc-900">Connect<span className="text-brand-primary">Up</span></span>
                     </div>
                 </div>
 

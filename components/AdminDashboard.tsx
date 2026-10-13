@@ -19,6 +19,7 @@ import { VideoPlayer } from './VideoPlayer';
 import { StorageService } from '../services/storageService';
 import { supabase } from '../services/supabaseClient';
 import { AdminBlogManager } from './AdminBlogManager';
+import { ConnectUpIcon } from './ui/ConnectUpLogo';
 
 interface AdminDashboardProps {
   userProfile?: any;
@@ -1415,9 +1416,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
             {/* Workspace Header */}
             <div className="p-5 border-b border-zinc-200 dark:border-zinc-800">
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 select-none">
-                  <span className="font-display font-black text-xl tracking-tight text-zinc-900 dark:text-white blur-[3px]">
-                    Connect<span className="text-amber-400">Up.</span>
+                <div className="flex items-center gap-2 select-none blur-[3px]">
+                  <ConnectUpIcon className="w-6 h-6" />
+                  <span className="font-display font-black text-xl tracking-tight text-zinc-900 dark:text-white">
+                    Connect<span className="text-amber-400">Up</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[10px] text-zinc-500 font-mono mt-1.5">

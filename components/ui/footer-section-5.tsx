@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { FlutedGlass } from "@paper-design/shaders-react";
+import { ConnectUpIcon } from "./ConnectUpLogo";
 
 const companyName = "ConnectUp";
 
 const ConnectUpLogo = ({ className }: { className?: string }) => {
   return (
-    <div className={`flex items-center gap-1 cursor-pointer p-0 select-none ${className}`}>
+    <div className={`flex items-center gap-2 cursor-pointer p-0 select-none ${className}`}>
+      <ConnectUpIcon className="w-8 h-8" />
       <span className="font-[800] text-2xl tracking-tighter">
         <span className="text-white">connect</span>
         <span className="text-zinc-950">up</span>

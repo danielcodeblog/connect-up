@@ -41,6 +41,36 @@ export interface BlogPost {
   slug?: string;
 }
 
+export const ConnectUpLogoIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 200 200" 
+    className={`${className} select-none shrink-0 drop-shadow-xs`}
+    aria-hidden="true"
+  >
+    <defs>
+      <radialGradient id="culogo-left" cx="32%" cy="32%" r="68%">
+        <stop offset="0%" stopColor="#FFFFFF" />
+        <stop offset="65%" stopColor="#E4E4E7" />
+        <stop offset="100%" stopColor="#A1A1AA" />
+      </radialGradient>
+      <radialGradient id="culogo-right" cx="32%" cy="32%" r="68%">
+        <stop offset="0%" stopColor="#FEF08A" />
+        <stop offset="55%" stopColor="#EAB308" />
+        <stop offset="100%" stopColor="#854D0E" />
+      </radialGradient>
+      <linearGradient id="culogo-conn" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stopColor="#E4E4E7" />
+        <stop offset="25%" stopColor="#FFFFFF" />
+        <stop offset="70%" stopColor="#FDE047" />
+        <stop offset="100%" stopColor="#EAB308" />
+      </linearGradient>
+    </defs>
+    <path d="M 60 140 Q 100 60 140 60" fill="none" stroke="url(#culogo-conn)" strokeWidth="18" strokeLinecap="round" />
+    <circle cx="60" cy="140" r="36" fill="url(#culogo-left)" />
+    <circle cx="140" cy="60" r="36" fill="url(#culogo-right)" />
+  </svg>
+);
+
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: 1,
@@ -572,8 +602,12 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                 {/* Author Metadata Bar */}
                 <div className="flex flex-wrap items-center justify-between gap-4 py-5 border-y border-zinc-200 text-sm text-zinc-600">
                   <div className="flex items-center gap-3.5">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-400 to-amber-200 flex items-center justify-center text-black font-black text-base shadow-xs">
-                      {selectedPost.author.split(' ').map(n => n[0]).join('')}
+                    <div className="w-12 h-12 rounded-full bg-zinc-950 p-2.5 flex items-center justify-center shadow-xs shrink-0 border border-zinc-900/10">
+                      {selectedPost.authorAvatar ? (
+                        <img src={selectedPost.authorAvatar} alt={selectedPost.author} className="w-full h-full object-cover rounded-full" />
+                      ) : (
+                        <ConnectUpLogoIcon className="w-full h-full" />
+                      )}
                     </div>
                     <div>
                       <p className="font-bold text-zinc-950 leading-tight">{selectedPost.author}</p>
@@ -644,8 +678,12 @@ export const BlogPage: React.FC<BlogPageProps> = ({
 
                 {/* Author Bio Card at End of Article */}
                 <div className="mt-12 pt-8 border-t border-zinc-200 flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-white p-6 rounded-2xl border border-zinc-200/60 shadow-xs">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-amber-400 to-amber-200 flex items-center justify-center text-black font-black text-xl shrink-0">
-                    {selectedPost.author.split(' ').map(n => n[0]).join('')}
+                  <div className="w-16 h-16 rounded-full bg-zinc-950 p-3.5 flex items-center justify-center shadow-xs shrink-0 border border-zinc-900/10">
+                    {selectedPost.authorAvatar ? (
+                      <img src={selectedPost.authorAvatar} alt={selectedPost.author} className="w-full h-full object-cover rounded-full" />
+                    ) : (
+                      <ConnectUpLogoIcon className="w-full h-full" />
+                    )}
                   </div>
                   <div className="text-center sm:text-left space-y-1">
                     <p className="font-bold text-zinc-950 text-base">{selectedPost.author}</p>
@@ -805,8 +843,12 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                     <div className="pt-6 mt-6 border-t border-zinc-200 space-y-5">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-400 to-amber-200 flex items-center justify-center text-black font-black text-xs shadow-xs">
-                            {currentHeroPost.author.split(' ').map(n => n[0]).join('')}
+                          <div className="w-10 h-10 rounded-full bg-zinc-950 p-2 flex items-center justify-center shadow-xs shrink-0 border border-zinc-900/10">
+                            {currentHeroPost.authorAvatar ? (
+                              <img src={currentHeroPost.authorAvatar} alt={currentHeroPost.author} className="w-full h-full object-cover rounded-full" />
+                            ) : (
+                              <ConnectUpLogoIcon className="w-full h-full" />
+                            )}
                           </div>
                           <div>
                             <p className="text-xs font-bold text-zinc-950">{currentHeroPost.author}</p>
@@ -983,8 +1025,12 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                             {/* Author & Read Arrow Footer */}
                             <div className="pt-4 border-t border-zinc-100 flex items-center justify-between text-xs">
                               <div className="flex items-center gap-2.5">
-                                <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-amber-400 to-amber-200 flex items-center justify-center text-black font-black text-[10px] shadow-2xs">
-                                  {post.author.split(' ').map(n => n[0]).join('')}
+                                <div className="w-7 h-7 rounded-full bg-zinc-950 p-1.5 flex items-center justify-center shadow-2xs shrink-0 border border-zinc-900/10">
+                                  {post.authorAvatar ? (
+                                    <img src={post.authorAvatar} alt={post.author} className="w-full h-full object-cover rounded-full" />
+                                  ) : (
+                                    <ConnectUpLogoIcon className="w-full h-full" />
+                                  )}
                                 </div>
                                 <span className="font-medium text-zinc-700 text-xs truncate max-w-[120px]">
                                   {post.author}

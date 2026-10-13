@@ -225,6 +225,16 @@ export default function LandingSite({
         <section id="why" className="w-full">
             <LandingWhy />
         </section>
+        <section id="founders" className="w-full relative py-12 md:py-24 bg-zinc-950 overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 pointer-events-none"
+            style={{ backgroundImage: `url(${foundersBg})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/40 to-zinc-950/90 pointer-events-none" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <FounderSlider founders={reviews} className="rounded-3xl" />
+          </div>
+        </section>
         <section id="pricing" className="w-full relative z-10 overflow-hidden max-w-full bg-white">
           <Pricing onPlanSelect={onLoginClick} />
         </section>

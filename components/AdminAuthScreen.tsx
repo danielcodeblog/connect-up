@@ -6,6 +6,7 @@ import { UserRole } from '../types';
 import { supabase } from '../services/supabaseClient';
 import { StorageService } from '../services/storageService';
 import authImage from '../src/assets/images/com.png';
+import { ConnectUpIcon } from './ui/ConnectUpLogo';
 
 interface AdminAuthScreenProps {
   onComplete: (role: UserRole, email?: string) => void;
@@ -194,9 +195,10 @@ export const AdminAuthScreen: React.FC<AdminAuthScreenProps> = ({ onComplete, on
               <ChevronLeft size={16} className="mr-1 group-hover:-translate-x-0.5 transition-transform" />
               <span>Back</span>
             </button>
-            <div className="flex items-center">
-              <span className="font-display font-black text-xl tracking-tight text-zinc-900 blur-[3px]">
-                Connect<span className="text-amber-400">Up.</span>
+            <div className="flex items-center gap-2 blur-[3px]">
+              <ConnectUpIcon className="w-6 h-6" />
+              <span className="font-display font-black text-xl tracking-tight text-zinc-900">
+                Connect<span className="text-amber-400">Up</span>
               </span>
             </div>
             <div className="w-12" />

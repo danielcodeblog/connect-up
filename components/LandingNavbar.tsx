@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { NavHeader } from './ui/nav-header';
+import { ConnectUpIcon } from './ui/ConnectUpLogo';
 
 export const AnimatedHamburger = ({ isOpen, toggle, lightMode = false }: { isOpen: boolean; toggle: () => void; lightMode?: boolean }) => (
   <button
@@ -94,9 +95,10 @@ export const LandingNavbar: React.FC<LandingNavbarProps> = ({
             {/* Header in mobile menu */}
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/5 md:mb-12 md:pb-8">
               <div 
-                className="flex items-center gap-2 cursor-pointer p-0 select-none"
+                className="flex items-center gap-2.5 cursor-pointer p-0 select-none group"
                 onClick={() => handlePageSelect('home')}
               >
+                <ConnectUpIcon className="w-8 h-8" />
                 <span className="font-[800] text-2xl md:text-3xl tracking-tighter">
                   <span className="text-white inline">connect</span>
                   <span className="text-[#FFBF00]">up</span>
@@ -153,9 +155,10 @@ export const LandingNavbar: React.FC<LandingNavbarProps> = ({
           >
             {/* Logo */}
             <div 
-              className="flex items-center gap-2 cursor-pointer relative z-10 select-none group"
+              className="flex items-center gap-2.5 cursor-pointer relative z-10 select-none group"
               onClick={() => handlePageSelect('home')}
             >
+              <ConnectUpIcon className="w-7 h-7" />
               <span className="font-[800] text-2xl tracking-tighter transition-colors">
                 <span className={isLight ? "text-zinc-950 inline transition-colors group-hover:text-zinc-700" : "text-white inline transition-colors group-hover:text-white/80"}>connect</span>
                 <span className="text-[#FFBF00] transition-colors">up</span>
@@ -204,6 +207,7 @@ export const LandingNavbar: React.FC<LandingNavbarProps> = ({
               className="flex items-center gap-2 cursor-pointer p-4 select-none group"
               onClick={() => handlePageSelect('home')}
             >
+              <ConnectUpIcon className="w-6 h-6" />
               <span className="font-[800] text-2xl tracking-tighter">
                 <span className={isLight ? "text-zinc-950 inline transition-colors group-hover:text-zinc-700" : "text-white inline transition-colors group-hover:text-white/80"}>connect</span>
                 <span className="text-[#FFBF00] transition-colors">up</span>
