@@ -72,8 +72,10 @@ const Tab = ({
       onClick={onClick}
       className={`relative z-10 block cursor-pointer px-3 py-1.5 text-sm capitalize transition-colors md:px-5 md:py-2 md:text-sm font-semibold ${
         isActive 
-          ? lightMode ? "text-[#D97706] font-bold" : "text-[#FFBF00]" 
-          : lightMode ? "text-zinc-600 hover:text-zinc-950" : "text-white hover:text-white/80"
+          ? "text-[#FFBF00] font-bold" 
+          : lightMode 
+            ? "text-zinc-700 hover:text-[#FFBF00]" 
+            : "text-white hover:text-[#FFBF00]"
       }`}
     >
       {children}

@@ -153,12 +153,12 @@ export const LandingNavbar: React.FC<LandingNavbarProps> = ({
           >
             {/* Logo */}
             <div 
-              className="flex items-center gap-2 cursor-pointer relative z-10 select-none"
+              className="flex items-center gap-2 cursor-pointer relative z-10 select-none group"
               onClick={() => handlePageSelect('home')}
             >
               <span className="font-[800] text-2xl tracking-tighter transition-colors">
-                <span className={isLight ? "text-zinc-950 inline" : "text-white inline"}>connect</span>
-                <span className={isLight ? "text-[#D97706]" : "text-[#FFBF00]"}>up</span>
+                <span className={isLight ? "text-zinc-950 inline transition-colors group-hover:text-zinc-700" : "text-white inline transition-colors group-hover:text-white/80"}>connect</span>
+                <span className="text-[#FFBF00] transition-colors">up</span>
               </span>
             </div>
 
@@ -193,20 +193,20 @@ export const LandingNavbar: React.FC<LandingNavbarProps> = ({
             className={`lg:hidden flex items-center justify-between pointer-events-auto transition-all duration-300 ease-out ${
               isLight
                 ? scrolled 
-                  ? 'rounded-full border border-zinc-200 bg-white/95 backdrop-blur-xl shadow-md px-2' 
-                  : 'rounded-full border border-zinc-200/70 bg-white/85 backdrop-blur-md shadow-xs px-2'
+                ? 'rounded-full border border-zinc-200 bg-white/95 backdrop-blur-xl shadow-md px-2' 
+                : 'rounded-full border border-zinc-200/70 bg-white/85 backdrop-blur-md shadow-xs px-2'
                 : scrolled 
-                  ? 'rounded-full border border-white/10 bg-[#0D0D0F]/85 backdrop-blur-xl shadow-2xl px-2' 
-                  : 'rounded-none border border-transparent bg-transparent px-0'
+                ? 'rounded-full border border-white/10 bg-[#0D0D0F]/85 backdrop-blur-xl shadow-2xl px-2' 
+                : 'rounded-none border border-transparent bg-transparent px-0'
             }`}
           >
             <div 
-              className="flex items-center gap-2 cursor-pointer p-4 select-none"
+              className="flex items-center gap-2 cursor-pointer p-4 select-none group"
               onClick={() => handlePageSelect('home')}
             >
               <span className="font-[800] text-2xl tracking-tighter">
-                <span className={isLight ? "text-zinc-950 inline" : "text-white inline"}>connect</span>
-                <span className={isLight ? "text-[#D97706]" : "text-[#FFBF00]"}>up</span>
+                <span className={isLight ? "text-zinc-950 inline transition-colors group-hover:text-zinc-700" : "text-white inline transition-colors group-hover:text-white/80"}>connect</span>
+                <span className="text-[#FFBF00] transition-colors">up</span>
               </span>
             </div>
 
