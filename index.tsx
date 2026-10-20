@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { ErrorBoundary } from './components/ErrorBoundary';
-import { Analytics } from '@vercel/analytics/react';
 
 // Suppress harmless play() interruption errors from react-player/video elements
 // This is a known browser quirk where a pause() call interrupts a pending play() promise.
@@ -45,7 +44,6 @@ root.render(
   <React.StrictMode>
     <ErrorBoundary>
       <App />
-      <Analytics />
     </ErrorBoundary>
   </React.StrictMode>
 );

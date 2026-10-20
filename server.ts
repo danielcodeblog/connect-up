@@ -4,6 +4,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
 import { createClient } from '@supabase/supabase-js';
+import { GoogleGenAI } from '@google/genai';
 
 dotenv.config();
 
@@ -1370,7 +1371,7 @@ async function startServer() {
       const smtpPortRaw = clean(process.env.SMTP_PORT) || '465';
       const smtpPort = parseInt(smtpPortRaw, 10);
       const smtpUser = clean(process.env.SMTP_USER);
-      const smtpPassword = clean(process.env.SMTP_PASSWORD);
+      const smtpPassword = clean(process.env.SMTP_PASSWORD) || clean(process.env.SMTP_PASS);
       const mailFromName = clean(process.env.MAIL_FROM_NAME) || 'ConnectUp';
       const mailFromAddress = clean(process.env.MAIL_FROM_ADDRESS) || smtpUser;
 
@@ -1490,6 +1491,75 @@ async function startServer() {
     // If we exhausted all options without success, return 502 to trigger client-side fallback GIF mechanism
     console.error('All Giphy API key options failed or returned invalid response structures. Triggering client fallback.');
     return res.status(502).json({ error: lastError?.message || 'All GIF search keys failed. Using fallback client-side GIFs.' });
+  });
+
+  // Server-side Gemini endpoints (secure proxy)
+  app.post('/api/gemini/analyze-pitch', async (req, res) => {
+    try {
+      const { pitchText } = req.body;
+      if (!pitchText || typeof pitchText !== 'string') {
+        return res.status(400).json({ error: 'pitchText is required' });
+      }
+      const apiKey = process.env.GEMINI_API_KEY || process.env.API_KEY;
+      if (!apiKey) {
+        return res.status(503).json({ error: 'GEMINI_API_KEY is not configured on the server.' });
+      }
+      const ai = new GoogleGenAI({ apiKey });
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: `Analyze this startup pitch summary and provide 3 brief bullet points of feedback (Strengths, Weaknesses, Improvements) for an investor audience:\n\n${pitchText}`,
+      });
+      return res.json({ text: response.text || 'Analysis complete.' });
+    } catch (error: any) {
+      console.error('Gemini pitch analysis error:', error);
+      return res.status(500).json({ error: error.message || 'Error generating analysis.' });
+    }
+  });
+
+  app.post('/api/gemini/market-research', async (req, res) => {
+    try {
+      const { query } = req.body;
+      if (!query || typeof query !== 'string') {
+        return res.status(400).json({ error: 'query is required' });
+      }
+      const apiKey = process.env.GEMINI_API_KEY || process.env.API_KEY;
+      if (!apiKey) {
+        return res.status(503).json({ error: 'GEMINI_API_KEY is not configured on the server.' });
+      }
+      const ai = new GoogleGenAI({ apiKey });
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: `Perform a market research analysis based on the following query: "${query}". 
+        
+Provide a structured executive summary that includes:
+- Key Market Trends
+- Major Competitors (if relevant)
+- Actionable Insights for a Startup Founder
+
+Keep the tone professional, concise, and data-driven.`,
+        config: {
+          tools: [{ googleSearch: {} }],
+        },
+      });
+
+      const text = response.text || 'No results found.';
+      const sources: { title: string; uri: string }[] = [];
+      const chunks = (response.candidates?.[0] as any)?.groundingMetadata?.groundingChunks || [];
+      
+      chunks.forEach((chunk: any) => {
+        if (chunk.web) {
+          sources.push({
+            title: chunk.web.title || 'Source',
+            uri: chunk.web.uri || '#'
+          });
+        }
+      });
+
+      return res.json({ text, sources });
+    } catch (error: any) {
+      console.error('Gemini market research error:', error);
+      return res.status(500).json({ error: error.message || 'Error performing research.' });
+    }
   });
 
   // Vite middleware for development
