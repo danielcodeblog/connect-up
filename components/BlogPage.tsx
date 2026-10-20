@@ -218,17 +218,51 @@ export const BLOG_POSTS: BlogPost[] = [
 ];
 
 interface BlogPageProps {
-  onNavigate: (page: string) => void;
-  onLoginClick: () => void;
+  onNavigate?: (page: string) => void;
+  onBackHome?: () => void;
+  onLoginClick?: () => void;
+  onNavigateToContact?: () => void;
+  onNavigateToSection?: (page: 'about' | 'founders' | 'home' | 'why' | 'pricing' | 'blog' | 'contact') => void;
+  onLegalView?: (view: 'privacy' | 'terms') => void;
 }
 
-export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, onLoginClick }) => {
+export const BlogPage: React.FC<BlogPageProps> = ({ 
+  onNavigate,
+  onBackHome,
+  onLoginClick,
+  onNavigateToContact,
+  onNavigateToSection,
+  onLegalView
+}) => {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [bookmarkedIds, setBookmarkedIds] = useState<(number | string)[]>([]);
   const [copiedLink, setCopiedLink] = useState(false);
   const [readingProgress, setReadingProgress] = useState(0);
+
+  const handleNav = (page: any) => {
+    if (page === 'blog') {
+      setSelectedPost(null);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (page === 'home' && onBackHome) {
+      onBackHome();
+      return;
+    }
+    if (page === 'contact' && onNavigateToContact) {
+      onNavigateToContact();
+      return;
+    }
+    if (onNavigateToSection) {
+      onNavigateToSection(page);
+      return;
+    }
+    if (onNavigate) {
+      onNavigate(page);
+    }
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -285,8 +319,8 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, onLoginClick }) 
       {/* Landing Navbar */}
       <LandingNavbar 
         currentPage="blog" 
-        onNavigate={onNavigate} 
-        onLoginClick={onLoginClick} 
+        onNavigate={handleNav} 
+        onLoginClick={onLoginClick || (() => {})} 
         lightMode={true}
       />
 
@@ -692,7 +726,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, onLoginClick }) 
         </AnimatePresence>
       </main>
 
-      <FooterSection5 />
+      <FooterSection5 onNavigate={handleNav} onLegalView={onLegalView} />
     </div>
   );
 };
