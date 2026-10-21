@@ -133,11 +133,38 @@ async function startServer() {
   // Apply global rate limiting to all /api/ paths early
   app.use('/api/', globalApiLimiter);
 
+  // Helper to extract Supabase project ref from JWT token payload
+  const getProjectRefFromKey = (key?: string): string | null => {
+    try {
+      if (!key || typeof key !== 'string' || !key.includes('.')) return null;
+      const parts = key.split('.');
+      if (parts.length >= 2) {
+        let b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+        while (b64.length % 4) b64 += '=';
+        const json = Buffer.from(b64, 'base64').toString('utf8');
+        const payload = JSON.parse(json);
+        return payload.ref || null;
+      }
+    } catch (e) {}
+    return null;
+  };
+
   // Setup basic supabase client for auth verification
-  const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const rawSupabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || '';
   const anonKey = process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
   
+  // Align URL with key ref if available
+  const keyRef = getProjectRefFromKey(serviceRoleKey) || getProjectRefFromKey(anonKey);
+  let supabaseUrl = rawSupabaseUrl;
+  if (keyRef) {
+    const expectedUrl = `https://${keyRef}.supabase.co`;
+    if (!supabaseUrl || !supabaseUrl.includes(keyRef)) {
+      console.log(`[Server] Aligning Supabase URL with API key project reference: ${expectedUrl}`);
+      supabaseUrl = expectedUrl;
+    }
+  }
+
   if (!supabaseUrl) {
     console.error("FATAL: Supabase URL is missing from environment variables.");
   }

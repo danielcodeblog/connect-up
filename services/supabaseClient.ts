@@ -14,8 +14,41 @@ const getEnvVar = (metaKey: string, processName: string): string => {
   return '';
 };
 
-const supabaseUrl = getEnvVar('VITE_SUPABASE_URL', 'VITE_SUPABASE_URL') || getEnvVar('VITE_SUPABASE_URL', 'SUPABASE_URL') || getEnvVar('NEXT_PUBLIC_SUPABASE_URL', 'NEXT_PUBLIC_SUPABASE_URL') || 'https://placeholder-project.supabase.co';
-const supabaseKey = getEnvVar('VITE_SUPABASE_ANON_KEY', 'VITE_SUPABASE_ANON_KEY') || getEnvVar('VITE_SUPABASE_ANON_KEY', 'SUPABASE_KEY') || 'placeholder-key';
+// Helper to extract Supabase project ref from JWT token payload
+const getProjectRefFromKey = (key: string): string | null => {
+  try {
+    if (!key || typeof key !== 'string' || !key.includes('.')) return null;
+    const parts = key.split('.');
+    if (parts.length >= 2) {
+      let b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+      while (b64.length % 4) b64 += '=';
+      const json = typeof atob !== 'undefined' 
+        ? atob(b64) 
+        : Buffer.from(b64, 'base64').toString('utf8');
+      const payload = JSON.parse(json);
+      return payload.ref || null;
+    }
+  } catch (e) {}
+  return null;
+};
+
+const rawKey = getEnvVar('VITE_SUPABASE_ANON_KEY', 'VITE_SUPABASE_ANON_KEY') || getEnvVar('VITE_SUPABASE_ANON_KEY', 'SUPABASE_KEY') || '';
+const rawUrl = getEnvVar('VITE_SUPABASE_URL', 'VITE_SUPABASE_URL') || getEnvVar('VITE_SUPABASE_URL', 'SUPABASE_URL') || getEnvVar('NEXT_PUBLIC_SUPABASE_URL', 'NEXT_PUBLIC_SUPABASE_URL') || '';
+
+// Smart alignment: If JWT key specifies a project ref, ensure URL points to that project
+let resolvedUrl = rawUrl;
+const keyProjectRef = getProjectRefFromKey(rawKey);
+
+if (keyProjectRef) {
+  const expectedUrl = `https://${keyProjectRef}.supabase.co`;
+  if (!resolvedUrl || resolvedUrl.includes('placeholder') || !resolvedUrl.includes(keyProjectRef)) {
+    console.info(`[SupabaseClient] Aligning Supabase URL with API key project reference: ${expectedUrl}`);
+    resolvedUrl = expectedUrl;
+  }
+}
+
+const supabaseUrl = resolvedUrl || 'https://placeholder-project.supabase.co';
+const supabaseKey = rawKey || 'placeholder-key';
 
 if (supabaseUrl.includes('placeholder') || !supabaseKey || supabaseKey === 'placeholder-key') {
   console.warn('Supabase credentials missing or invalid. App will run in Mock Mode.');

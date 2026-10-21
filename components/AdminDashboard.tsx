@@ -1537,10 +1537,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
         </aside>
 
         {/* MAIN CANVASES */}
-        <div className="flex-1 flex flex-col min-w-0 overflow-y-auto">
+        <div className="flex-1 flex flex-col min-w-0 overflow-y-auto custom-scrollbar scroll-smooth overscroll-contain">
           
           {/* SAAS TOP BAR CONTRACT */}
-          <header className="sticky top-0 z-30 bg-white/80 dark:bg-[#09090B]/80 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80 w-full max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+          <header className="sticky top-0 z-30 bg-white/80 dark:bg-[#09090B]/80 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80 w-full max-w-[1600px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
             
             {/* Zone 1: Contextual Breadcrumb */}
             <div className="flex items-center gap-2 text-xs">
@@ -1804,7 +1804,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
           </div>
 
           {/* TAB CONTENT VIEWPORT */}
-          <main className="flex-1 p-6 md:p-8 space-y-8 max-w-7xl w-full mx-auto">
+          <main className="flex-1 p-6 md:p-8 pb-24 space-y-8 max-w-[1600px] w-full mx-auto">
             
             {/* TAB 1: OVERVIEW & BENTO METRICS */}
             {activeTab === 'dashboards' && (
@@ -2040,7 +2040,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
                 </div>
 
                 {/* EXECUTIVE TRANSACTION HISTORY & REVENUE LEDGER */}
-                <div className="bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 rounded-xl shadow-xs overflow-hidden">
+                <div className="bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 rounded-xl shadow-xs overflow-hidden mb-12">
                   
                   {/* Card Header & Controls */}
                   <div className="p-5 border-b border-zinc-150 dark:border-zinc-800/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -2150,10 +2150,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
                   </div>
 
                   {/* Transactions Table */}
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto max-h-[580px] overflow-y-auto custom-scrollbar scroll-smooth overscroll-contain">
                     <table className="w-full text-left text-xs whitespace-nowrap">
-                      <thead>
-                        <tr className="border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-mono uppercase tracking-wider text-zinc-400 bg-zinc-50/30 dark:bg-zinc-900/20">
+                      <thead className="sticky top-0 z-20 bg-white dark:bg-[#121215] shadow-xs">
+                        <tr className="border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-mono uppercase tracking-wider text-zinc-400 bg-zinc-50/95 dark:bg-zinc-900/95 backdrop-blur-md">
                           <th className="py-3 px-4 font-medium">Tx Reference</th>
                           <th className="py-3 px-4 font-medium">Customer</th>
                           <th className="py-3 px-4 font-medium">Plan & Interval</th>
@@ -2395,10 +2395,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
 
                 {/* Users Table */}
                 <div className="bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 rounded-xl overflow-hidden shadow-xs">
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto max-h-[560px] overflow-y-auto custom-scrollbar scroll-smooth overscroll-contain">
                     <table className="w-full text-left text-xs whitespace-nowrap">
-                      <thead>
-                        <tr className="border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-mono uppercase tracking-wider text-zinc-400 bg-zinc-50/50 dark:bg-zinc-900/30">
+                      <thead className="sticky top-0 z-20 bg-white dark:bg-[#121215] shadow-xs">
+                        <tr className="border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-mono uppercase tracking-wider text-zinc-400 bg-zinc-50/95 dark:bg-zinc-900/95 backdrop-blur-md">
                           <th className="py-3 px-4 font-medium">User</th>
                           <th className="py-3 px-4 font-medium">Role</th>
                           <th className="py-3 px-4 font-medium">Plan</th>
@@ -2600,10 +2600,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
 
                 {/* Subscriptions Table */}
                 <div className="bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 rounded-xl overflow-hidden shadow-xs">
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto max-h-[560px] overflow-y-auto custom-scrollbar scroll-smooth overscroll-contain">
                     <table className="w-full text-left text-xs whitespace-nowrap">
-                      <thead>
-                        <tr className="border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-mono uppercase tracking-wider text-zinc-400 bg-zinc-50/50 dark:bg-zinc-900/30">
+                      <thead className="sticky top-0 z-20 bg-white dark:bg-[#121215] shadow-xs">
+                        <tr className="border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-mono uppercase tracking-wider text-zinc-400 bg-zinc-50/95 dark:bg-zinc-900/95 backdrop-blur-md">
                           <th className="py-3 px-4 font-medium">Transaction ID</th>
                           <th className="py-3 px-4 font-medium">Customer</th>
                           <th className="py-3 px-4 font-medium">Plan & Interval</th>
@@ -3203,7 +3203,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ userProfile, onN
                   </div>
                 </div>
 
-                <div className="bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 rounded-xl overflow-hidden shadow-xs divide-y divide-zinc-100 dark:divide-zinc-800/60 font-mono text-xs">
+                <div className="bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 rounded-xl overflow-hidden shadow-xs divide-y divide-zinc-100 dark:divide-zinc-800/60 font-mono text-xs max-h-[600px] overflow-y-auto custom-scrollbar scroll-smooth overscroll-contain">
                   {isFetchingLogs && filteredAuditLogs.length === 0 ? (
                     <div className="p-8 text-center text-zinc-400 font-sans flex items-center justify-center gap-2">
                       <RefreshCw size={15} className="animate-spin text-amber-500" />

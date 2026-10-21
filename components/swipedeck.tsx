@@ -235,7 +235,7 @@ const SwipeDeck: React.FC<SwipeDeckProps> = React.memo(({ onMatch, userProfile }
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="absolute inset-4 md:inset-y-12 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-xl lg:max-w-2xl z-[80] bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden"
+            className="absolute inset-x-4 md:inset-y-20 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-xl lg:max-w-2xl z-[80] bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden my-auto md:max-h-[76vh]"
           >
             <div className="absolute top-4 right-4 z-[90]">
               <button onClick={handleCloseMemo} className="w-10 h-10 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-900 flex items-center justify-center transition-colors">
@@ -250,9 +250,6 @@ const SwipeDeck: React.FC<SwipeDeckProps> = React.memo(({ onMatch, userProfile }
                   <div className="flex flex-wrap gap-2 mb-3">
                     <span className="px-2.5 py-1 bg-zinc-100 text-zinc-700 rounded-lg text-xs font-bold uppercase">{memoCard.industry}</span>
                     <span className="px-2.5 py-1 bg-amber-400/20 text-amber-700 rounded-lg text-xs font-extrabold uppercase">{memoCard.fundingStage}</span>
-                    {memoCard.valuationCap && (
-                      <span className="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-bold">Valuation Cap: ${memoCard.valuationCap.toLocaleString()}</span>
-                    )}
                   </div>
                   <h2 className="text-3xl font-display font-extrabold mb-2 text-zinc-900">{memoCard.name}</h2>
                   <p className="text-amber-600 font-bold text-sm leading-relaxed mb-4">{memoCard.oneLiner}</p>

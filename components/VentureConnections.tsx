@@ -529,7 +529,7 @@ export const VentureConnections = () => {
     const isWordleAll = (completedPuzzles.wordle?.length || 0) === WORDLE_PUZZLES.length;
 
     return (
-      <div className="bg-black rounded-2xl p-6 border border-zinc-800/80 shadow-2xl flex flex-col relative overflow-y-auto max-h-[calc(100vh-32px)] text-white">
+      <div className="bg-black rounded-2xl p-6 border border-zinc-800/80 shadow-2xl flex flex-col relative overflow-y-auto max-h-[calc(100vh-32px)] text-white custom-scrollbar">
         {/* Title Block */}
         <div className="flex items-center justify-between mb-5">
           <div className="flex items-center gap-2">
@@ -722,7 +722,7 @@ export const VentureConnections = () => {
 
   // Active games rendered in-place with easy go-back headers
   return (
-    <div className="bg-black rounded-2xl p-6 border border-zinc-800/80 shadow-2xl flex flex-col relative overflow-y-auto max-h-[calc(100vh-32px)] text-white">
+    <div className="bg-black rounded-2xl p-6 border border-zinc-800/80 shadow-2xl flex flex-col relative overflow-y-auto max-h-[calc(100vh-32px)] text-white custom-scrollbar">
       {/* Header with back button */}
       <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-white/10">
         <button 

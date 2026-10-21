@@ -2583,13 +2583,59 @@ export const StorageService = {
   },
 
   subscribeToMessages: (chatId: string, callback: (payload: any) => void) => {
-      if (_isMock) return { unsubscribe: () => {} };
-      return supabase.channel(`chat:${chatId}`).on('postgres_changes', { event: '*', schema: 'public', table: 'messages', filter: `chat_id=eq.${chatId}` }, (payload) => { if (payload.eventType === 'INSERT') callback({ type: 'INSERT', message: payload.new }); else if (payload.eventType === 'UPDATE') callback({ type: 'UPDATE', message: payload.new }); else if (payload.eventType === 'DELETE') callback({ type: 'DELETE', id: payload.old.id }); }).subscribe();
+      if (_isMock || !isSupabaseConfigured) return { unsubscribe: () => {} };
+      try {
+          const channelName = `chat-${chatId}-${Math.random().toString(36).substring(2, 9)}`;
+          const channel = supabase.channel(channelName)
+              .on('postgres_changes', { event: '*', schema: 'public', table: 'messages', filter: `chat_id=eq.${chatId}` }, (payload) => {
+                  try {
+                      if (payload.eventType === 'INSERT') callback({ type: 'INSERT', message: payload.new });
+                      else if (payload.eventType === 'UPDATE') callback({ type: 'UPDATE', message: payload.new });
+                      else if (payload.eventType === 'DELETE') callback({ type: 'DELETE', id: payload.old.id });
+                  } catch (err) {
+                      console.warn('Error in message subscription callback:', err);
+                  }
+              })
+              .subscribe();
+
+          return {
+              unsubscribe: () => {
+                  try {
+                      supabase.removeChannel(channel);
+                  } catch (e) {}
+              }
+          };
+      } catch (e) {
+          console.warn('Failed to subscribe to chat messages:', e);
+          return { unsubscribe: () => {} };
+      }
   },
 
   subscribeToGlobalMessages: (callback: (message: any) => void) => {
-      if (_isMock) return { unsubscribe: () => {} };
-      return supabase.channel('global-messages').on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, (payload) => { callback(payload.new); }).subscribe();
+      if (_isMock || !isSupabaseConfigured) return { unsubscribe: () => {} };
+      try {
+          const channelName = `global-messages-${Math.random().toString(36).substring(2, 9)}`;
+          const channel = supabase.channel(channelName)
+              .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, (payload) => {
+                  try {
+                      callback(payload.new);
+                  } catch (err) {
+                      console.warn('Error in global message callback:', err);
+                  }
+              })
+              .subscribe();
+
+          return {
+              unsubscribe: () => {
+                  try {
+                      supabase.removeChannel(channel);
+                  } catch (e) {}
+              }
+          };
+      } catch (e) {
+          console.warn('Failed to subscribe to global messages:', e);
+          return { unsubscribe: () => {} };
+      }
   },
 
   addMessage: async (message: Message, chatId: string, peerPublicKey?: string): Promise<Message | null> => {

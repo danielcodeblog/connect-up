@@ -1481,7 +1481,7 @@ const App = () => {
               {...{
                 email: userProfile?.email || 'user@connectup.com',
                 amount: (billingCycle === 'yearly' ? 2900 : 500) * 1400,
-                publicKey: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || '',
+                publicKey: (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_PAYSTACK_PUBLIC_KEY) || (typeof process !== 'undefined' && (process as any).env && ((process as any).env.VITE_PAYSTACK_PUBLIC_KEY || (process as any).env.PAYSTACK_PUBLIC_KEY)) || '',
                 text: isProcessing 
                   ? 'Processing...' 
                   : (userProfile?.plan === 'pro' && userProfile?.billingCycle === billingCycle)

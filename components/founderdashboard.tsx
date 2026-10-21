@@ -319,7 +319,7 @@ const FounderDashboard: React.FC<FounderDashboardProps> = React.memo(({
 
         <div 
           ref={scrollContainerRef} 
-          className="w-full flex-1 relative z-10 pb-36 px-4 sm:px-6 overflow-y-auto overscroll-behavior-y-contain no-scrollbar"
+          className="w-full flex-1 relative z-10 pb-36 px-4 sm:px-6 overflow-y-auto overscroll-behavior-y-contain custom-scrollbar"
           style={{ 
             transform: isPulling ? `translateY(${pullDistance}px)` : 'none', 
             transition: isPulling ? 'none' : 'transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
@@ -772,7 +772,7 @@ const FounderDashboard: React.FC<FounderDashboardProps> = React.memo(({
               </div>
 
               {/* Form Section */}
-              <div className="px-5 sm:px-6 py-4 space-y-4 overflow-y-auto no-scrollbar">
+              <div className="px-5 sm:px-6 py-4 space-y-4 overflow-y-auto custom-scrollbar">
                 <div className="space-y-1.5">
                   <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider ml-1">Objective / Subject</label>
                   <input 
