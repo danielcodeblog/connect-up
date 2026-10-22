@@ -408,10 +408,6 @@ export const AdminBlogManager: React.FC<AdminBlogManagerProps> = ({
                 Editorial & Blog Management
               </h2>
             </div>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-2xl">
-              Create, edit, feature, and publish dispatch articles directly to the public ConnectUp Blog. 
-              Protected by PostgreSQL Row-Level Security (RLS) so only admins have write permissions.
-            </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2.5 shrink-0">

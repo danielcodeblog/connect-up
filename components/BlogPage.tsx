@@ -503,25 +503,14 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                ========================================================================= */
             <div className="space-y-16">
               
-              {/* TOP HEADER SECTION (INSIGHTS FROM OUR CREATIVE PLAYGROUND STYLE) */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-10 border-b border-zinc-200">
-                <div className="lg:col-span-8 space-y-4">
-                  <div className="flex flex-wrap items-center gap-2.5">
-                    <span className="px-3.5 py-1 rounded-full bg-amber-400 text-black text-[11px] font-black uppercase tracking-wider shadow-xs">
-                      Strategy
-                    </span>
-                    <span className="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-[11px] font-black uppercase tracking-wider border border-emerald-200 shadow-xs">
-                      Proven Success
-                    </span>
-                  </div>
-                  <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-black text-zinc-950 tracking-tight leading-[0.95]">
-                    INSIGHTS FROM OUR <span className="text-amber-600 underline decoration-amber-300 decoration-wavy underline-offset-8">VENTURE LABS</span>
+              {/* TOP HEADER SECTION */}
+              <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-8 border-b border-zinc-200">
+                <div>
+                  <h1 className="font-serif text-3xl sm:text-5xl font-black text-zinc-950 tracking-tight">
+                    Insights & Perspectives
                   </h1>
-                </div>
-
-                <div className="lg:col-span-4">
-                  <p className="text-zinc-600 text-sm sm:text-base leading-relaxed font-light">
-                    We craft interactive syndicate experiences that respond and engage, turning static fundraising into dynamic, connected partnerships across Europe.
+                  <p className="text-zinc-500 text-sm sm:text-base mt-2 font-normal">
+                    Curated dispatch notes, deeptech venture analysis, and syndicate strategies.
                   </p>
                 </div>
               </div>
